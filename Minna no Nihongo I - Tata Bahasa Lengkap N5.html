@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ringkasan tata bahasa Minna no Nihongo I bab 1-25 level JLPT N5 lengkap dengan furigana dan terjemahan Indonesia.">
+<title>Minna no Nihongo I — Tata Bahasa Lengkap N5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec;--bg-soft:#efe9dd;--card:#fefcf8;--text:#2c2420;--muted:#6b5f56;
+  --accent:#c4536a;--accent-2:#4a7c6f;--jp:#1e4d5c;--line:#e8e0d2;
+  --pattern-bg:#fbf7f0;--pattern-line:#c4536a;
+  --note-bg:#f2f7f3;--note-border:#c4d9cc;
+  --warn-bg:#fdf3f3;--warn-border:#e8c4c4;--warn-text:#8a3a3a;
+  --code-bg:#efe9dd;--shadow:0 4px 16px rgba(44,36,32,.08);
+}
+body.dark{
+  --bg:#16161d;--bg-soft:#1a1a24;--card:#1e1e2a;--text:#e8e3db;--muted:#a89f94;
+  --accent:#e88fa0;--accent-2:#6ec4b0;--jp:#7dd3fc;--line:#2a2a38;
+  --pattern-bg:#23232f;--pattern-line:#e88fa0;
+  --note-bg:#1a2424;--note-border:#2e4444;
+  --warn-bg:#2a1e1e;--warn-border:#4a2e2e;--warn-text:#f0a5a5;
+  --code-bg:#2a2a38;--shadow:0 4px 16px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter','Noto Sans JP',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;transition:background .25s,color .25s}
+ruby{ruby-position:over}
+rt{font-size:.55em;color:var(--muted);font-weight:400;letter-spacing:.02em}
+body.no-furigana rt{display:none}
+.wrap{display:flex;min-height:100vh}
+header.topbar{position:fixed;top:0;left:0;right:0;height:56px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 18px;gap:12px;z-index:40}
+.menu-btn{display:none;background:var(--card);border:1px solid var(--line);color:var(--text);width:38px;height:38px;border-radius:9px;font-size:18px;cursor:pointer}
+.topbar .title{font-size:14px;font-weight:600;letter-spacing:-.2px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar .title span{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toggle-group{display:flex;gap:8px}
+.toggle-btn{background:var(--card);border:1px solid var(--line);color:var(--text);padding:7px 12px;border-radius:9px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:.15s;display:flex;align-items:center;gap:6px}
+.toggle-btn:hover{border-color:var(--accent-2);color:var(--accent-2)}
+.toggle-btn.on{background:var(--accent-2);color:#fff;border-color:var(--accent-2)}
+.toggle-btn .dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.4}
+.toggle-btn.on .dot{opacity:1}
+aside{width:300px;flex-shrink:0;position:fixed;top:56px;left:0;bottom:0;overflow-y:auto;background:var(--bg-soft);border-right:1px solid var(--line);padding:20px 16px 60px}
+aside::-webkit-scrollbar{width:8px}
+aside::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+aside::-webkit-scrollbar-track{background:transparent}
+.search{width:100%;padding:9px 12px;margin-bottom:16px;background:var(--card);border:1px solid var(--line);border-radius:9px;color:var(--text);font-size:13px;outline:none;font-family:inherit;transition:.15s}
+.search:focus{border-color:var(--accent-2);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent-2) 15%,transparent)}
+.search::placeholder{color:var(--muted)}
+.nav-title{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:16px 4px 8px;font-weight:700}
+.nav a{display:flex;align-items:center;gap:10px;padding:7px 10px;margin:1px 0;border-radius:8px;color:var(--muted);text-decoration:none;font-size:12.5px;transition:.12s;line-height:1.4}
+.nav a:hover{background:var(--card);color:var(--text)}
+.nav a.active{background:var(--card);color:var(--accent);font-weight:600}
+.nav a .n{font-size:10px;font-weight:700;color:var(--muted);min-width:22px;letter-spacing:.02em}
+.nav a.active .n{color:var(--accent)}
+main{flex:1;margin-left:300px;margin-top:56px;padding:36px 48px 120px;max-width:1000px}
+.hero{background:linear-gradient(135deg,var(--card),var(--bg-soft));border:1px solid var(--line);border-radius:18px;padding:32px 30px;margin-bottom:32px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero::after{content:"日本語";position:absolute;right:-10px;bottom:-50px;font-size:140px;font-weight:900;color:color-mix(in srgb,var(--text) 4%,transparent);pointer-events:none;font-family:'Noto Sans JP',sans-serif}
+.hero h2{margin:0 0 8px;font-size:26px;letter-spacing:-.4px}
+.hero p{margin:0;color:var(--muted);max-width:640px;font-size:14px}
+.hero .tags{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.hero .tags span{background:color-mix(in srgb,var(--accent-2) 12%,transparent);border:1px solid color-mix(in srgb,var(--accent-2) 35%,transparent);color:var(--accent-2);padding:3px 10px;border-radius:999px;font-size:11.5px;font-weight:500}
+section{margin-bottom:36px;scroll-margin-top:72px}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--line)}
+.sec-num{background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 60%,var(--accent-2)));color:#fff;font-weight:800;font-size:13px;min-width:54px;height:40px;border-radius:10px;display:grid;place-items:center;flex-shrink:0;font-family:'Inter',sans-serif;letter-spacing:.05em}
+.sec-head h3{margin:0;font-size:19px;letter-spacing:-.3px}
+.sec-head .sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+.point{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px 22px;margin-bottom:14px;box-shadow:var(--shadow)}
+.point h4{margin:0 0 12px;font-size:15px;color:var(--text);display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-weight:600}
+.point h4 .n{background:var(--accent);color:#fff;font-size:11px;font-weight:700;min-width:22px;height:22px;border-radius:6px;display:grid;place-items:center;padding:0 6px;font-family:'Inter',sans-serif}
+.pattern{background:var(--pattern-bg);border-left:4px solid var(--pattern-line);padding:11px 15px;border-radius:0 9px 9px 0;margin:0 0 12px;font-size:14.5px;font-weight:600;color:var(--jp);letter-spacing:.2px;overflow-x:auto;white-space:nowrap;font-family:'Noto Sans JP',sans-serif}
+.point .desc{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+.point .desc b{color:var(--text);font-weight:600}
+.ex{background:var(--bg-soft);border-radius:9px;padding:11px 14px;margin:8px 0;border-left:3px solid var(--line)}
+.ex .jp{color:var(--jp);font-weight:500;font-size:14.5px;font-family:'Noto Sans JP',sans-serif;line-height:2.1}
+.ex .id{color:var(--muted);font-size:12.5px;margin-top:3px}
+.note{background:var(--note-bg);border:1px solid var(--note-border);border-radius:9px;padding:10px 14px;font-size:12.8px;margin:10px 0;color:var(--text)}
+.note b{color:var(--accent-2)}
+.warn{background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:9px;padding:10px 14px;font-size:12.8px;margin:10px 0;color:var(--warn-text)}
+.warn b{color:var(--accent)}
+.tbl-wrap{overflow-x:auto;margin:12px 0;border-radius:9px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:400px}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg-soft);color:var(--accent-2);font-weight:700;font-size:12px;letter-spacing:.03em}
+tr:last-child td{border-bottom:none}
+td .jp{color:var(--jp);font-family:'Noto Sans JP',sans-serif}
+code{background:var(--code-bg);padding:1px 6px;border-radius:5px;font-size:12.5px;color:var(--accent);font-family:'Noto Sans JP',monospace}
+.compare{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 8%,transparent),color-mix(in srgb,var(--accent-2) 8%,transparent));border:1px dashed color-mix(in srgb,var(--accent) 30%,transparent);border-radius:11px;padding:14px 16px;margin:12px 0}
+.compare h5{margin:0 0 10px;font-size:13px;color:var(--accent);display:flex;align-items:center;gap:7px;font-weight:700}
+.compare h5::before{content:"⇄";font-size:14px}
+#top{position:fixed;right:22px;bottom:22px;width:42px;height:42px;border-radius:50%;border:none;cursor:pointer;background:var(--accent);color:#fff;font-size:18px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;z-index:45;font-weight:700}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{transform:translateY(-3px)}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:40px 0 20px;border-top:1px solid var(--line);margin-top:50px;line-height:1.9}
+footer b{color:var(--accent-2)}
+footer .src{font-size:11.5px;color:var(--muted);margin-top:8px;font-style:italic}
+.empty{display:none;text-align:center;padding:60px 20px;color:var(--muted);font-size:14px}
+.empty.show{display:block}
+@media(max-width:960px){
+  header.topbar{padding:0 12px}
+  .menu-btn{display:grid;place-items:center}
+  aside{transform:translateX(-105%);transition:.3s;z-index:50;width:280px;top:56px}
+  aside.open{transform:translateX(0)}
+  main{margin-left:0;padding:24px 18px 100px}
+  .hero{padding:22px 20px}
+  .hero h2{font-size:21px}
+  .hero::after{font-size:90px;bottom:-30px}
+  .point{padding:16px 15px}
+  .topbar .title span{display:none}
+}
+@media(max-width:560px){
+  .toggle-btn span.label{display:none}
+  .toggle-btn{padding:7px 10px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <div class="title">Minna no Nihongo I <span>· Tata Bahasa N5</span></div>
+  <div class="toggle-group">
+    <button class="toggle-btn on" id="furiganaBtn" aria-label="Toggle furigana">
+      <span class="dot"></span><span class="label">ふりがな</span>
+    </button>
+    <button class="toggle-btn" id="themeBtn" aria-label="Toggle dark mode">
+      <span class="dot"></span><span class="label">Dark</span>
+    </button>
+  </div>
+</header>
+
+<div class="wrap">
+
+<aside id="sidebar">
+  <input class="search" id="search" placeholder="🔍 Cari pola / bab / kanji…" aria-label="Cari">
+
+  <div class="nav-title">Bab 1 – 25</div>
+  <nav class="nav" id="nav">
+    <a href="#bab1"><span class="n">01</span>Kalimat Nominal</a>
+    <a href="#bab2"><span class="n">02</span>Kata Penunjuk Benda</a>
+    <a href="#bab3"><span class="n">03</span>Kata Penunjuk Tempat</a>
+    <a href="#bab4"><span class="n">04</span>Waktu & Kata Kerja ます</a>
+    <a href="#bab5"><span class="n">05</span>Pergi, Datang, Pulang</a>
+    <a href="#bab6"><span class="n">06</span>Objek & Ajakan</a>
+    <a href="#bab7"><span class="n">07</span>Alat, Pemberian</a>
+    <a href="#bab8"><span class="n">08</span>Kata Sifat</a>
+    <a href="#bab9"><span class="n">09</span>Kesukaan & Kemampuan</a>
+    <a href="#bab10"><span class="n">10</span>Keberadaan</a>
+    <a href="#bab11"><span class="n">11</span>Kata Bantu Bilangan</a>
+    <a href="#bab12"><span class="n">12</span>Waktu Lampau & Perbandingan</a>
+    <a href="#bab13"><span class="n">13</span>Keinginan</a>
+    <a href="#bab14"><span class="n">14</span>Bentuk て</a>
+    <a href="#bab15"><span class="n">15</span>Izin & Larangan</a>
+    <a href="#bab16"><span class="n">16</span>Menyambung Kalimat</a>
+    <a href="#bab17"><span class="n">17</span>Bentuk ない</a>
+    <a href="#bab18"><span class="n">18</span>Bentuk Kamus</a>
+    <a href="#bab19"><span class="n">19</span>Pengalaman & Perubahan</a>
+    <a href="#bab20"><span class="n">20</span>Bentuk Biasa</a>
+    <a href="#bab21"><span class="n">21</span>Pendapat & Ucapan</a>
+    <a href="#bab22"><span class="n">22</span>Anak Kalimat</a>
+    <a href="#bab23"><span class="n">23</span>Waktu & Syarat</a>
+    <a href="#bab24"><span class="n">24</span>Memberi & Menerima</a>
+    <a href="#bab25"><span class="n">25</span>Pengandaian</a>
+  </nav>
+
+  <div class="nav-title">Ringkasan</div>
+  <nav class="nav">
+    <a href="#ringkas-partikel"><span class="n">§</span>Perbandingan Partikel</a>
+    <a href="#ringkas-kk"><span class="n">§</span>Perbandingan Kata Kerja</a>
+    <a href="#ringkas-bentuk"><span class="n">§</span>Tabel Perubahan Bentuk</a>
+  </nav>
+</aside>
+
+<main>
+
+<div class="hero">
+  <h2>📘 Tata Bahasa Minna no Nihongo I</h2>
+  <p>Ringkasan tata bahasa Jepang level <b>N5</b> dari Bab 1 sampai Bab 25 — lengkap dengan furigana per kanji, contoh kalimat, dan terjemahan Indonesia.</p>
+  <div class="tags">
+    <span>JLPT N5</span><span>25 Bab</span><span>Furigana</span><span>Contoh Kalimat</span><span>Bahasa Indonesia</span>
+  </div>
+</div>
+
+<div class="empty" id="empty">🔍 Tidak ada bab yang cocok dengan pencarianmu.</div>
+
+<!-- ============ BAB 1 ============ -->
+<section id="bab1">
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <div>
+      <h3>Kalimat Nominal</h3>
+      <div class="sub">～は ～です · Kata Benda · Partikel Dasar</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB₁ は KB₂ です</h4>
+    <div class="pattern">KB₁ は KB₂ です</div>
+    <p class="desc">Partikel <code>は</code> (dibaca <b>wa</b>) menandai <b>topik</b> kalimat — hal yang sedang dibicarakan. <code>です</code> menjadi predikat yang menyatakan penilaian, kepastian, sekaligus sikap sopan kepada lawan bicara.</p>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は マイク・ミラーです。</div>
+      <div class="id">Saya Mike Miller.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>会社員<rt>かいしゃいん</rt></ruby>です。</div>
+      <div class="id">Saya pegawai perusahaan.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> Partikel <code>は</code> dibaca <b>wa</b>, bukan <b>ha</b>. Dalam bahasa Jepang klasik, は dibaca <b>wa</b> saat dipakai sebagai partikel — ini pengecualian baca yang harus dihafal.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Bentuk Negatif じゃ／では ありません</h4>
+    <div class="pattern">KB₁ は KB₂ じゃ（では） ありません</div>
+    <p class="desc"><code>じゃ ありません</code> dipakai dalam percakapan sehari-hari. <code>では ありません</code> lebih formal dan dipakai dalam pidato atau tulisan resmi.</p>
+    <div class="ex">
+      <div class="jp">サントスさんは <ruby>学生<rt>がくせい</rt></ruby>じゃ ありません。</div>
+      <div class="id">Sdr. Santos bukan mahasiswa.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> <code>では</code> diucapkan <b>dewa</b>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kalimat Tanya か</h4>
+    <div class="pattern">KB₁ は KB₂ ですか。</div>
+    <p class="desc">Partikel <code>か</code> di akhir kalimat membentuk kalimat tanya. Intonasi naik di akhir kalimat. Untuk menjawab, gunakan <code>はい</code> atau <code>いいえ</code>.</p>
+    <div class="ex">
+      <div class="jp">ミラーさんは アメリカ<ruby>人<rt>じん</rt></ruby>ですか。</div>
+      <div class="id">Apakah Sdr. Miller orang Amerika?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">……はい、アメリカ<ruby>人<rt>じん</rt></ruby>です。</div>
+      <div class="id">……Ya, orang Amerika.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>先生<rt>せんせい</rt></ruby>ですか。</div>
+      <div class="id">Apakah Sdr. Miller guru?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">……いいえ、<ruby>先生<rt>せんせい</rt></ruby>じゃ ありません。</div>
+      <div class="id">……Bukan, dia bukan guru.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あの <ruby>方<rt>かた</rt></ruby>は どなたですか。……[あの <ruby>方<rt>かた</rt></ruby>は] ミラーさんです。</div>
+      <div class="id">Siapakah orang itu? ……[Beliau] Sdr. Miller.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> Partikel も</h4>
+    <div class="pattern">KB も ～</div>
+    <p class="desc"><code>も</code> dipakai bila predikat dianggap sama dengan predikat sebelumnya, artinya "juga".</p>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>会社員<rt>かいしゃいん</rt></ruby>です。グプタさんも <ruby>会社員<rt>かいしゃいん</rt></ruby>です。</div>
+      <div class="id">Sdr. Miller pegawai perusahaan. Sdr. Gupta juga pegawai perusahaan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>学生<rt>がくせい</rt></ruby>です。マリアさんも <ruby>学生<rt>がくせい</rt></ruby>です。</div>
+      <div class="id">Saya mahasiswa. Sdr. Maria juga mahasiswa.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB₁ の KB₂ · ～さん</h4>
+    <div class="pattern">KB₁ の KB₂</div>
+    <p class="desc">Partikel <code>の</code> menyambung dua Kata Benda. KB₁ menerangkan KB₂, bisa menyatakan kepemilikan atau kesatuan.</p>
+    <div class="ex">
+      <div class="jp">ミラーさんは IMC の <ruby>社員<rt>しゃいん</rt></ruby>です。</div>
+      <div class="id">Sdr. Miller pegawai perusahaan IMC.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あの <ruby>方<rt>かた</rt></ruby>は ミラーさんです。</div>
+      <div class="id">Beliau Sdr. Miller.</div>
+    </div>
+    <p class="desc" style="margin-top:10px"><code>さん</code> dipakai di belakang marga/nama lawan bicara atau orang ketiga. Tidak dipakai untuk diri sendiri. Untuk anak kecil digunakan <code>ちゃん</code>.</p>
+    <div class="ex">
+      <div class="jp"><ruby>鈴木<rt>すずき</rt></ruby>：ミラーさんは <ruby>学生<rt>がくせい</rt></ruby>ですか。<br>ミラー：いいえ、<ruby>会社員<rt>かいしゃいん</rt></ruby>です。</div>
+      <div class="id">Suzuki: Apakah Sdr. Miller mahasiswa?<br>Miller: Bukan, saya pegawai perusahaan.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> <code>あなた</code> hanya untuk orang yang sangat dekat (suami-istri, pacar). Jika dipakai kepada orang yang tidak dekat, terkesan kurang sopan.</div>
+  </article>
+</section>
+
+<!-- ============ BAB 2 ============ -->
+<section id="bab2">
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <div>
+      <h3>Kata Penunjuk Benda</h3>
+      <div class="sub">これ・それ・あれ · この・その・あの</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> これ／それ／あれ</h4>
+    <p class="desc">Berfungsi sebagai Kata Benda (berdiri sendiri).</p>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata</th><th>Menunjuk benda yang ada di…</th></tr>
+        <tr><td class="jp">これ</td><td>dekat <b>si pembicara</b></td></tr>
+        <tr><td class="jp">それ</td><td>dekat <b>lawan bicara</b></td></tr>
+        <tr><td class="jp">あれ</td><td>jauh dari <b>keduanya</b></td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp">それは <ruby>辞書<rt>じしょ</rt></ruby>ですか。</div>
+      <div class="id">Apakah itu kamus?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">これは だれの <ruby>傘<rt>かさ</rt></ruby>ですか。</div>
+      <div class="id">Ini payung siapa?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> この／その／あの + Kata Benda</h4>
+    <div class="pattern">この／その／あの + KB</div>
+    <p class="desc">Dipakai bila menerangkan Kata Benda langsung di belakangnya.</p>
+    <div class="ex">
+      <div class="jp">この <ruby>本<rt>ほん</rt></ruby>は わたしのです。</div>
+      <div class="id">Buku ini kepunyaan saya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あの <ruby>方<rt>かた</rt></ruby>は どなたですか。</div>
+      <div class="id">Siapakah beliau?</div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th></th><th>こ</th><th>そ</th><th>あ</th><th>ど</th></tr>
+        <tr><td>Barang</td><td class="jp">これ</td><td class="jp">それ</td><td class="jp">あれ</td><td class="jp">どれ</td></tr>
+        <tr><td>KB / Orang</td><td class="jp">この KB</td><td class="jp">その KB</td><td class="jp">あの KB</td><td class="jp">どの KB</td></tr>
+        <tr><td>Tempat</td><td class="jp">ここ</td><td class="jp">そこ</td><td class="jp">あそこ</td><td class="jp">どこ</td></tr>
+        <tr><td>Arah (halus)</td><td class="jp">こちら</td><td class="jp">そちら</td><td class="jp">あちら</td><td class="jp">どちら</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> そうです</h4>
+    <p class="desc">Jawaban positif untuk kalimat tanya nominal.</p>
+    <div class="ex">
+      <div class="jp">それは <ruby>辞書<rt>じしょ</rt></ruby>ですか。……はい、そうです。</div>
+      <div class="id">Apakah itu kamus? ……Ya, betul.</div>
+    </div>
+    <p class="desc">Untuk jawaban negatif, tidak lazim memakai <code>そう</code>, tetapi <code>ちがいます</code> atau menyatakan jawaban sebenarnya.</p>
+    <div class="ex">
+      <div class="jp">それは ミラーさんのですか。……いいえ、<ruby>違<rt>ちが</rt></ruby>います。</div>
+      <div class="id">Apakah itu punya Sdr. Miller? ……Bukan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">それは シャープペンシルですか。……いいえ、ボールペンです。</div>
+      <div class="id">Apakah itu pensil isi ulang? ……Bukan, bolpoin.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ～か、～か</h4>
+    <p class="desc">Kalimat tanya yang memberi pilihan lebih dari dua. Jawaban langsung menyebut pilihan (tanpa <code>はい</code>/<code>いいえ</code>).</p>
+    <div class="ex">
+      <div class="jp">これは「９」ですか、「７」ですか。……「９」です。</div>
+      <div class="id">Ini "9" atau "7"? ……"9".</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB₁ の KB₂ · の sebagai pengganti KB</h4>
+    <p class="desc"><code>の</code> juga bisa menggantikan Kata Benda yang sudah disebut sebelumnya, tetapi <b>tidak</b> digunakan untuk menggantikan orang.</p>
+    <div class="ex">
+      <div class="jp">これは コンピューターの <ruby>本<rt>ほん</rt></ruby>です。</div>
+      <div class="id">Ini buku komputer.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あれは だれの かばんですか。……<ruby>佐藤<rt>さとう</rt></ruby>さんのです。</div>
+      <div class="id">Itu tas siapa? ……Kepunyaan Sdr. Sato.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">この かばんは あなたのですか。……いいえ、わたしのじゃ ありません。</div>
+      <div class="id">Apakah tas ini tas Anda? ……Bukan, bukan kepunyaan saya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは IMC の <ruby>社員<rt>しゃいん</rt></ruby>ですか。……はい、IMC の <ruby>社員<rt>しゃいん</rt></ruby>です。<br>× はい、IMC のです。</div>
+      <div class="id">Apakah Sdr. Miller pegawai IMC? ……Ya, pegawai IMC.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> <code>の</code> <b>tidak dapat</b> menggantikan orang. Contoh di atas ×「はい、IMC のです」 salah, karena <code>の</code> tidak bisa menggantikan "pegawai IMC" (orang).</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> お～ · そうですか</h4>
+    <p class="desc"><code>お</code> dibubuhkan pada Kata Benda untuk menyatakan kesopanan (contoh: おみやげ, おさけ). <code>そうですか</code> diucapkan dengan intonasi menurun, dipakai saat mendapat informasi baru dan telah mengerti.</p>
+    <div class="ex">
+      <div class="jp">この <ruby>傘<rt>かさ</rt></ruby>は あなたのですか。……いいえ、<ruby>違<rt>ちが</rt></ruby>います。シュミットさんのです。……そうですか。</div>
+      <div class="id">Apakah payung ini punya Anda? ……Bukan, punya Sdr. Schmidt. ……O, begitu.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 3 ============ -->
+<section id="bab3">
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <div>
+      <h3>Kata Penunjuk Tempat</h3>
+      <div class="sub">ここ・そこ・あそこ · どこ／どちら</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> ここ／そこ／あそこ／こちら／そちら／あちら</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata</th><th>Menunjuk tempat</th></tr>
+        <tr><td class="jp">ここ</td><td>tempat si pembicara berada</td></tr>
+        <tr><td class="jp">そこ</td><td>tempat lawan bicara berada</td></tr>
+        <tr><td class="jp">あそこ</td><td>jauh dari keduanya</td></tr>
+      </table>
+    </div>
+    <p class="desc"><code>こちら／そちら／あちら</code> menunjukkan arah, tetapi juga bisa dipakai untuk menunjuk tempat. Lebih sopan daripada <code>ここ／そこ／あそこ</code>.</p>
+    <div class="note"><b>Perhatian:</b> Jika pembicara menganggap lawan bicara berada di daerah yang sama → <b>ここ</b>. Sedikit jauh → <b>そこ</b>. Jauh → <b>あそこ</b>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> KB は tempat です</h4>
+    <div class="pattern">KB は ～ です</div>
+    <div class="ex">
+      <div class="jp">お<ruby>手洗<rt>てあら</rt></ruby>いは あそこです。</div>
+      <div class="id">Kamar kecil di sana.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>電話<rt>でんわ</rt></ruby>は <ruby>２階<rt>にかい</rt></ruby>です。</div>
+      <div class="id">Telepon di lantai dua.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>山田<rt>やまだ</rt></ruby>さんは <ruby>事務所<rt>じむしょ</rt></ruby>です。</div>
+      <div class="id">Sdr. Yamada di kantor.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> どこ／どちら</h4>
+    <div class="ex">
+      <div class="jp">お<ruby>手洗<rt>てあら</rt></ruby>いは どこですか。……あそこです。</div>
+      <div class="id">Di mana kamar kecil? ……Di sana.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">エレベーターは どちらですか。……あちらです。</div>
+      <div class="id">Lift di sebelah mana? ……Di sebelah sana.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>学校<rt>がっこう</rt></ruby>は どこですか。</div>
+      <div class="id">Sekolah di mana?</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>会社<rt>かいしゃ</rt></ruby>は どちらですか。</div>
+      <div class="id">Perusahaan mana?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB₁ の KB₂ (asal produk)</h4>
+    <div class="ex">
+      <div class="jp">これは どこの コンピューターですか。……<ruby>日本<rt>にほん</rt></ruby>の コンピューターです。／パワー<ruby>電気<rt>でんき</rt></ruby>の コンピューターです。</div>
+      <div class="id">Ini komputer buatan mana? ……Komputer buatan Jepang. / Komputer Power Elektronik.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> お～ (untuk lawan bicara / pihak ketiga)</h4>
+    <div class="ex">
+      <div class="jp">[お]<ruby>国<rt>くに</rt></ruby>は どちらですか。</div>
+      <div class="id">Berasal dari mana?</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 4 ============ -->
+<section id="bab4">
+  <div class="sec-head">
+    <div class="sec-num">04</div>
+    <div>
+      <h3>Waktu & Kata Kerja ます</h3>
+      <div class="sub">今～時～分 · ます／ません／ました</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> 今～時～分です</h4>
+    <p class="desc">Untuk menyatakan waktu, gunakan Kata Bantu Bilangan <code>時</code> dan <code>分</code> di belakang angka.</p>
+    <div class="ex">
+      <div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>何時<rt>なんじ</rt></ruby>ですか。……７<ruby>時<rt>じ</rt></ruby>１０<ruby>分<rt>ぷん</rt></ruby>です。</div>
+      <div class="id">Sekarang pukul berapa? ……Pukul tujuh lewat sepuluh menit.</div>
+    </div>
+    <div class="note"><b>Cara baca 分:</b> 1, 3, 4, 6, 8, 10 → <b>ぷん</b> (いっぷん、さんぷん、よんぷん、ろっぷん、はっぷん、じゅっぷん). 2, 5, 7, 9 → <b>ふん</b> (にふん、ごふん、ななふん、きゅうふん).</div>
+    <div class="note"><b>Pengecualian baca jam:</b> 4時 → <b>よじ</b> (bukan しじ), 7時 → <b>しちじ</b> (bukan ななじ), 9時 → <b>くじ</b> (bukan きゅうじ).</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Perubahan Kata Kerja ます</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Waktu</th><th>Positif</th><th>Negatif</th></tr>
+        <tr><td>Non-lampau (sekarang & akan datang)</td><td class="jp">おきます</td><td class="jp">おきません</td></tr>
+        <tr><td>Lampau</td><td class="jp">おきました</td><td class="jp">おきませんでした</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>毎日<rt>まいにち</rt></ruby> <ruby>勉強<rt>べんきょう</rt></ruby>します。</div>
+      <div class="id">Saya belajar setiap hari.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>毎朝<rt>まいあさ</rt></ruby> <ruby>６時<rt>ろくじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きます。</div>
+      <div class="id">Setiap pagi saya bangun pukul enam.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あした <ruby>６時<rt>ろくじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きます。</div>
+      <div class="id">Besok saya bangun pukul enam.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">けさ <ruby>６時<rt>ろくじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きました。</div>
+      <div class="id">Tadi pagi saya bangun pukul enam.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kalimat Tanya Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp">きのう <ruby>勉強<rt>べんきょう</rt></ruby>しましたか。……はい、<ruby>勉強<rt>べんきょう</rt></ruby>しました。／いいえ、<ruby>勉強<rt>べんきょう</rt></ruby>しませんでした。</div>
+      <div class="id">Kemarin belajar? ……Ya, belajar. / Tidak, tidak belajar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>毎朝<rt>まいあさ</rt></ruby> <ruby>何時<rt>なんじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きますか。……<ruby>６時<rt>ろくじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きます。</div>
+      <div class="id">Setiap pagi bangun pukul berapa? ……Bangun pukul enam.</div>
+    </div>
+    <div class="note">Jawaban mengulang Kata Kerja. <code>そうです</code>／<code>ちがいます</code> <b>tidak</b> dapat dipakai untuk kalimat verbal.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB(waktu) に Kata Kerja</h4>
+    <p class="desc">Partikel <code>に</code> menunjukkan waktu spesifik suatu aksi.</p>
+    <div class="ex">
+      <div class="jp"><ruby>６時半<rt>ろくじはん</rt></ruby>に <ruby>起<rt>お</rt></ruby>きます。</div>
+      <div class="id">Bangun pukul setengah tujuh.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>７月２日<rt>しちがつふつか</rt></ruby>に <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Datang ke Jepang pada tanggal 2 Juli.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きのう <ruby>勉強<rt>べんきょう</rt></ruby>しました。</div>
+      <div class="id">Kemarin belajar. (tanpa に)</div>
+    </div>
+    <div class="warn"><b>Tidak pakai に:</b> きょう、あした、あさって、きのう、おととい、けさ、こんばん、いま、まいあさ、まいばん、まいにち、せんしゅう、こんしゅう、らいしゅう、いつ、せんげつ、こんげつ、らいげつ、ことし、らいねん、きょねん.</div>
+    <div class="note"><b>Boleh pakai boleh tidak:</b> ～ようび、あさ、ひる、ばん、よる.<br>Contoh: <ruby>日曜日<rt>にちようび</rt></ruby>[に] <ruby>奈良<rt>なら</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB₁ から KB₂ まで</h4>
+    <p class="desc"><code>から</code> menandai titik awal, <code>まで</code> menandai titik akhir (waktu atau tempat).</p>
+    <div class="ex">
+      <div class="jp"><ruby>９時<rt>くじ</rt></ruby>から <ruby>５時<rt>ごじ</rt></ruby>まで <ruby>勉強<rt>べんきょう</rt></ruby>します。</div>
+      <div class="id">Belajar dari pukul sembilan sampai pukul lima.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>大阪<rt>おおさか</rt></ruby>から <ruby>東京<rt>とうきょう</rt></ruby>まで <ruby>３時間<rt>さんじかん</rt></ruby> かかります。</div>
+      <div class="id">Butuh tiga jam dari Osaka sampai Tokyo.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>９時<rt>くじ</rt></ruby>から <ruby>働<rt>はたら</rt></ruby>きます。</div>
+      <div class="id">Bekerja dari pukul sembilan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>銀行<rt>ぎんこう</rt></ruby>は <ruby>９時<rt>くじ</rt></ruby>から <ruby>３時<rt>さんじ</rt></ruby>までです。</div>
+      <div class="id">Bank buka dari pukul sembilan sampai pukul tiga.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> KB₁ と KB₂ · ね</h4>
+    <div class="ex">
+      <div class="jp"><ruby>銀行<rt>ぎんこう</rt></ruby>の <ruby>休<rt>やす</rt></ruby>みは <ruby>土曜日<rt>どようび</rt></ruby>と <ruby>日曜日<rt>にちようび</rt></ruby>です。</div>
+      <div class="id">Hari libur bank adalah hari Sabtu dan Minggu.</div>
+    </div>
+    <p class="desc"><code>ね</code> di akhir kalimat dipakai untuk mengharapkan persetujuan, menegaskan, atau menekankan.</p>
+    <div class="ex">
+      <div class="jp"><ruby>毎日<rt>まいにち</rt></ruby> <ruby>10時<rt>じゅうじ</rt></ruby>まで <ruby>勉強<rt>べんきょう</rt></ruby>します。……<ruby>大変<rt>たいへん</rt></ruby>ですね。</div>
+      <div class="id">Setiap hari belajar sampai pukul sepuluh. ……O, berat ya.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 5 ============ -->
+<section id="bab5">
+  <div class="sec-head">
+    <div class="sec-num">05</div>
+    <div>
+      <h3>Pergi, Datang, Pulang</h3>
+      <div class="sub">へ · で · と · どこも／なにも</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB(tempat) へ 行きます／来ます／帰ります</h4>
+    <p class="desc">Partikel <code>へ</code> menunjukkan arah perpindahan.</p>
+    <div class="ex">
+      <div class="jp"><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pergi ke Kyoto.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Datang ke Jepang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">うちへ <ruby>帰<rt>かえ</rt></ruby>ります。</div>
+      <div class="id">Pulang ke rumah.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> Partikel <code>へ</code> diucapkan <b>e</b>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> どこ[へ]も／何も + Kata Kerja Negatif</h4>
+    <div class="ex">
+      <div class="jp">どこ[へ]も <ruby>行<rt>い</rt></ruby>きません。</div>
+      <div class="id">Tidak pergi ke mana-mana.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>何<rt>なに</rt></ruby>も <ruby>食<rt>た</rt></ruby>べません。</div>
+      <div class="id">Tidak makan apa-apa.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">だれも <ruby>来<rt>き</rt></ruby>ませんでした。</div>
+      <div class="id">Tidak datang siapa-siapa.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB(kendaraan) で 行きます／来ます／帰ります</h4>
+    <p class="desc">Partikel <code>で</code> menunjukkan sarana transportasi.</p>
+    <div class="ex">
+      <div class="jp"><ruby>電車<rt>でんしゃ</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pergi dengan kereta listrik.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">タクシーで <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Datang dengan taksi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>駅<rt>えき</rt></ruby>から <ruby>歩<rt>ある</rt></ruby>いて <ruby>帰<rt>かえ</rt></ruby>りました。</div>
+      <div class="id">Pulang dengan jalan kaki dari stasiun.</div>
+    </div>
+    <div class="note">Jalan kaki → <code>あるいて</code> (tanpa partikel <code>で</code>).</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB(orang/hewan) と Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp"><ruby>家族<rt>かぞく</rt></ruby>と <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Datang ke Jepang bersama keluarga.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>一人<rt>ひとり</rt></ruby>で <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pergi ke Tokyo sendirian.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> Kata Tanya いつ</h4>
+    <div class="ex">
+      <div class="jp">いつ <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ましたか。……<ruby>３月25日<rt>さんがつにじゅうごにち</rt></ruby>に <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Kapan datang ke Jepang? ……Datang pada tanggal 25 Maret.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">いつ <ruby>広島<rt>ひろしま</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。……<ruby>来週<rt>らいしゅう</rt></ruby> <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Kapan pergi ke Hiroshima? ……Pergi minggu depan.</div>
+    </div>
+    <div class="warn"><code>いつ</code> tidak dapat dibubuhi partikel <code>に</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> よ · そうですね</h4>
+    <div class="ex">
+      <div class="jp">この <ruby>電車<rt>でんしゃ</rt></ruby>は <ruby>甲子園<rt>こうしえん</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。……いいえ、<ruby>行<rt>い</rt></ruby>きません。<ruby>次<rt>つぎ</rt></ruby>の「<ruby>普通<rt>ふつう</rt></ruby>」ですよ。</div>
+      <div class="id">Apakah kereta ini menuju Koshien? ……Tidak. Yang "Biasa" berikutnya lho.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あしたは <ruby>日曜日<rt>にちようび</rt></ruby>ですね。……あ、そうですね。</div>
+      <div class="id">Besok hari Minggu, ya. ……O, ya betul.</div>
+    </div>
+    <div class="compare">
+      <h5>そうですか vs そうですね</h5>
+      <p class="desc" style="margin:0"><b>そうですか</b> → mendapat informasi baru yang belum diketahui.<br><b>そうですね</b> → menyetujui / sependapat.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 6 ============ -->
+<section id="bab6">
+  <div class="sec-head">
+    <div class="sec-num">06</div>
+    <div>
+      <h3>Objek & Ajakan</h3>
+      <div class="sub">を · ませんか · ましょう</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB を Kata Kerja (Transitif)</h4>
+    <div class="ex">
+      <div class="jp">ジュースを <ruby>飲<rt>の</rt></ruby>みます。</div>
+      <div class="id">Minum jus.</div>
+    </div>
+    <div class="note"><code>を</code> hanya dipakai untuk menulis partikel (dibaca <b>o</b>).</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> KB を します</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kategori</th><th>Contoh</th></tr>
+        <tr><td>Olahraga</td><td class="jp">サッカーをします · トランプをします</td></tr>
+        <tr><td>Acara</td><td class="jp">パーティーをします · 会議をします</td></tr>
+        <tr><td>Lain-lain</td><td class="jp">宿題をします · 仕事をします · 電話をします</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> 何をしますか</h4>
+    <div class="ex">
+      <div class="jp"><ruby>月曜日<rt>げつようび</rt></ruby> <ruby>何<rt>なに</rt></ruby>を しますか。……<ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Hari Senin melakukan apa? ……Pergi ke Kyoto.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きのう <ruby>何<rt>なに</rt></ruby>を しましたか。……サッカーを しました。</div>
+      <div class="id">Kemarin melakukan apa? ……Bermain sepak bola.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> なん dan なに</h4>
+    <p class="desc"><code>なん</code> dipakai bila kata berikutnya diawali baris <b>た・だ・な</b>, atau disertai Kata Bantu Bilangan. Selain itu gunakan <code>なに</code>.</p>
+    <div class="ex">
+      <div class="jp">それは <ruby>何<rt>なん</rt></ruby>ですか。</div>
+      <div class="id">Itu apa? (dibaca なん karena diikuti です)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>何<rt>なん</rt></ruby>の <ruby>本<rt>ほん</rt></ruby>ですか。</div>
+      <div class="id">Buku apa? (dibaca なん karena diikuti の baris な)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>何<rt>なん</rt></ruby>で <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。……<ruby>新幹線<rt>しんかんせん</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Dengan apa pergi ke Tokyo? ……Pergi dengan Shinkansen.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> <code>何で</code> bisa juga dibaca <b>なんで</b> yang berarti "mengapa" — tergantung konteks.</div>
+    <div class="ex">
+      <div class="jp">テレーザちゃんは <ruby>何歳<rt>なんさい</rt></ruby>ですか。……６<ruby>歳<rt>ろくさい</rt></ruby>です。</div>
+      <div class="id">Berapa usia Teresa? ……Enam tahun.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>何<rt>なに</rt></ruby>を <ruby>買<rt>か</rt></ruby>いますか。</div>
+      <div class="id">Mau membeli apa? (dibaca なに karena diikuti を)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB(tempat) で Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp"><ruby>駅<rt>えき</rt></ruby>で <ruby>新聞<rt>しんぶん</rt></ruby>を <ruby>買<rt>か</rt></ruby>います。</div>
+      <div class="id">Membeli surat kabar di stasiun.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> Kata Kerja ませんか · ましょう</h4>
+    <div class="ex">
+      <div class="jp">いっしょに <ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きませんか。……ええ、いいですね。</div>
+      <div class="id">Bagaimana kalau kita pergi ke Kyoto bersama? ……Ya, bagus ya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ちょっと <ruby>休<rt>やす</rt></ruby>みましょう。</div>
+      <div class="id">Mari istirahat sebentar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">いっしょに <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べませんか。……ええ、<ruby>食<rt>た</rt></ruby>べましょう。</div>
+      <div class="id">Bagaimana makan siang bersama? ……Ya, ayo makan.</div>
+    </div>
+    <div class="note"><code>ませんか</code> lebih menghormati keinginan lawan bicara dibanding <code>ましょう</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">7</span> Partikel か (informasi baru)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日曜日<rt>にちようび</rt></ruby> <ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きました。……<ruby>京都<rt>きょうと</rt></ruby>ですか。いいですね。</div>
+      <div class="id">Hari Minggu pergi ke Kyoto. ……Kyoto? Bagus ya.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 7 ============ -->
+<section id="bab7">
+  <div class="sec-head">
+    <div class="sec-num">07</div>
+    <div>
+      <h3>Alat, Pemberian & Penerimaan</h3>
+      <div class="sub">で · に · あげます／もらいます</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB(alat/sarana) で Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp">はしで <ruby>食<rt>た</rt></ruby>べます。</div>
+      <div class="id">Makan dengan sumpit.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日本語<rt>にほんご</rt></ruby>で レポートを <ruby>書<rt>か</rt></ruby>きます。</div>
+      <div class="id">Menulis laporan dalam bahasa Jepang.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> 「Kata/Kalimat」は ～語で 何ですか</h4>
+    <div class="ex">
+      <div class="jp">「ありがとう」は <ruby>英語<rt>えいご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。……「Thank you」です。</div>
+      <div class="id">Apa bahasa Inggris dari "Arigato"? ……"Thank you".</div>
+    </div>
+    <div class="ex">
+      <div class="jp">「Thank you」は <ruby>日本語<rt>にほんご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。……「ありがとう」です。</div>
+      <div class="id">Apa bahasa Jepang dari "Thank you"? ……"Arigato".</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB(orang) に KB を あげます／かします／おしえます</h4>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました。</div>
+      <div class="id">Saya memberikan Sdr. Kimura bunga.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] イーさんに <ruby>本<rt>ほん</rt></ruby>を <ruby>貸<rt>か</rt></ruby>しました。</div>
+      <div class="id">Saya meminjamkan buku kepada Sdr. Lee.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] <ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>英語<rt>えいご</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えます。</div>
+      <div class="id">Saya mengajar bahasa Inggris kepada Sdr. Yamada.</div>
+    </div>
+    <div class="note"><b>Preview:</b> Nanti di Bab 24 kita akan belajar <code>くれます</code> (orang lain memberi ke saya) dan <code>もらいます</code> (saya menerima dari orang lain).</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB(orang) に KB を もらいます／かります／ならいます</h4>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] <ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいました。</div>
+      <div class="id">Saya mendapatkan bunga dari Sdr. Yamada.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] カリナさんに CD を <ruby>借<rt>か</rt></ruby>りました。</div>
+      <div class="id">Saya meminjam CD dari Karina.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">[<ruby>私<rt>わたし</rt></ruby>は] ワンさんに <ruby>中国語<rt>ちゅうごくご</rt></ruby>を <ruby>習<rt>なら</rt></ruby>います。</div>
+      <div class="id">Saya belajar bahasa Tionghoa dari Sdr. Wang.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> Partikel <code>から</code> juga dapat menggantikan <code>に</code>, terutama bila lawannya organisasi (perusahaan/sekolah). Kalau memberi/menerima dengan organisasi, <code>から</code> lebih umum dipakai.</div>
+    <div class="ex">
+      <div class="jp"><ruby>銀行<rt>ぎんこう</rt></ruby>から お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</div>
+      <div class="id">Saya meminjam uang dari bank.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> もう Kata Kerja ました</h4>
+    <div class="ex">
+      <div class="jp">もう <ruby>荷物<rt>にもつ</rt></ruby>を <ruby>送<rt>おく</rt></ruby>りましたか。……はい、[もう] <ruby>送<rt>おく</rt></ruby>りました。／いいえ、まだ <ruby>送<rt>おく</rt></ruby>って いません。／いいえ、まだです。</div>
+      <div class="id">Apakah barang sudah dikirim? ……Ya, sudah. / Belum, belum dikirim. / Belum.</div>
+    </div>
+    <div class="warn"><code>いいえ、～ませんでした</code> tidak dapat dipakai karena berarti "tidak dilakukan pada waktu lampau".</div>
+    <div class="note"><b>Catatan:</b> <code>まだです</code> adalah singkatan dari <code>まだ～ていません</code>, artinya "belum".</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> Menghilangkan Partikel (dalam percakapan)</h4>
+    <div class="ex">
+      <div class="jp">この スプーン[は]、すてきですね。</div>
+      <div class="id">Sendok ini bagus ya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">コーヒー[を]、もう <ruby>一杯<rt>いっぱい</rt></ruby> いかがですか。</div>
+      <div class="id">Bagaimana kopi secangkir lagi?</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 8 ============ -->
+<section id="bab8">
+  <div class="sec-head">
+    <div class="sec-num">08</div>
+    <div>
+      <h3>Kata Sifat</h3>
+      <div class="sub">い形容詞 · な形容詞 · が · とても</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Kata Sifat + です</h4>
+    <p class="desc"><code>です</code> <b>bukan</b> bagian dari kata sifat, tetapi ditambahkan saat membentuk kalimat sopan.</p>
+    <div class="ex">
+      <div class="jp">ワット<ruby>先生<rt>せんせい</rt></ruby>は <ruby>親切<rt>しんせつ</rt></ruby>です。</div>
+      <div class="id">Bapak Watt baik hati. (な形容詞)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>富士山<rt>ふじさん</rt></ruby>は <ruby>高<rt>たか</rt></ruby>いです。</div>
+      <div class="id">Gunung Fuji tinggi. (い形容詞)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Bentuk Negatif Kata Sifat</h4>
+    <div class="pattern">な形容詞：～じゃ（では） ありません<br>い形容詞：～くないです</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th></th><th>な形容詞</th><th>い形容詞</th></tr>
+        <tr><td>Positif</td><td class="jp">しんせつです</td><td class="jp">たかいです</td></tr>
+        <tr><td>Negatif</td><td class="jp">しんせつじゃ（では） ありません</td><td class="jp">たかくないです</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp">あそこは <ruby>静<rt>しず</rt></ruby>かじゃ（では） ありません。</div>
+      <div class="id">Di sana tidak sunyi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">この <ruby>本<rt>ほん</rt></ruby>は おもしろくないです。</div>
+      <div class="id">Buku ini tidak menarik.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> Negatif dari <code>いいです</code> adalah <code>よくないです</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Sifat menerangkan Kata Benda</h4>
+    <div class="pattern">な形容詞 [な] + KB &nbsp;|&nbsp; い形容詞 + KB</div>
+    <div class="ex">
+      <div class="jp">ワット<ruby>先生<rt>せんせい</rt></ruby>は <ruby>親切<rt>しんせつ</rt></ruby>な <ruby>先生<rt>せんせい</rt></ruby>です。</div>
+      <div class="id">Bapak Watt adalah guru yang baik hati.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>富士山<rt>ふじさん</rt></ruby>は <ruby>高<rt>たか</rt></ruby>い <ruby>山<rt>やま</rt></ruby>です。</div>
+      <div class="id">Gunung Fuji adalah gunung yang tinggi.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ～が、～</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>の <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>は おいしいですが、<ruby>高<rt>たか</rt></ruby>いです。</div>
+      <div class="id">Makanan Jepang enak, tetapi mahal.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> とても／あまり</h4>
+    <div class="ex">
+      <div class="jp">ペキンは とても <ruby>寒<rt>さむ</rt></ruby>いです。</div>
+      <div class="id">Beijing sangat dingin.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">これは とても <ruby>有名<rt>ゆうめい</rt></ruby>な <ruby>映画<rt>えいが</rt></ruby>です。</div>
+      <div class="id">Ini film yang sangat terkenal.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">シャンハイは あまり <ruby>寒<rt>さむ</rt></ruby>くないです。</div>
+      <div class="id">Shanghai tidak begitu dingin.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">さくら<ruby>大学<rt>だいがく</rt></ruby>は あまり <ruby>有名<rt>ゆうめい</rt></ruby>な <ruby>大学<rt>だいがく</rt></ruby>じゃ ありません。</div>
+      <div class="id">Universitas Sakura tidak begitu terkenal.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> KB は どうですか · KB は どんな KB ですか</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>の <ruby>生活<rt>せいかつ</rt></ruby>は どうですか。……<ruby>楽<rt>たの</rt></ruby>しいです。</div>
+      <div class="id">Bagaimana kehidupan di Jepang? ……Menyenangkan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>の <ruby>生活<rt>せいかつ</rt></ruby>は どうですか。……あまり <ruby>楽<rt>たの</rt></ruby>しくないです。</div>
+      <div class="id">Bagaimana kehidupan di Jepang? ……Tidak begitu menyenangkan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>奈良<rt>なら</rt></ruby>は どんな <ruby>町<rt>まち</rt></ruby>ですか。……<ruby>古<rt>ふる</rt></ruby>い <ruby>町<rt>まち</rt></ruby>です。</div>
+      <div class="id">Nara kota bagaimana? ……Kota yang tua.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 9 ============ -->
+<section id="bab9">
+  <div class="sec-head">
+    <div class="sec-num">09</div>
+    <div>
+      <h3>Kesukaan & Kemampuan</h3>
+      <div class="sub">が すき・きらい・じょうず · が わかります · から</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB が 好きです／嫌いです／上手です／下手です／わかります／あります</h4>
+    <p class="desc">Kata seperti <b>好き・嫌い・上手・下手・わかる・ある・いる</b> menggunakan <code>が</code> untuk menandai objeknya, <b>bukan</b> <code>を</code>. Ini karena predikatnya bukan kata kerja aksi.</p>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は イタリア<ruby>料理<rt>りょうり</rt></ruby>が <ruby>好<rt>す</rt></ruby>きです。</div>
+      <div class="id">Saya suka masakan Italia.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>日本語<rt>にほんご</rt></ruby>が わかります。</div>
+      <div class="id">Saya mengerti bahasa Jepang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>車<rt>くるま</rt></ruby>が あります。</div>
+      <div class="id">Saya mempunyai mobil.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は さしみが <ruby>嫌<rt>きら</rt></ruby>いです。</div>
+      <div class="id">Saya tidak suka sashimi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは テニスが <ruby>上手<rt>じょうず</rt></ruby>です。</div>
+      <div class="id">Sdr. Miller pandai bermain tenis.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> どんな KB</h4>
+    <div class="ex">
+      <div class="jp">どんな スポーツが <ruby>好<rt>す</rt></ruby>きですか。……サッカーが <ruby>好<rt>す</rt></ruby>きです。</div>
+      <div class="id">Suka olahraga apa? ……Suka sepak bola.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Keterangan Tingkat & Kuantitas</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Dipakai di kalimat positif</th><th>Dipakai di kalimat negatif</th></tr>
+        <tr><td class="jp">よく わかります</td><td class="jp">あまり わかりません</td></tr>
+        <tr><td class="jp">だいたい わかります</td><td class="jp">ぜんぜん わかりません</td></tr>
+        <tr><td class="jp">すこし わかります</td><td class="jp">あまり ありません</td></tr>
+        <tr><td class="jp">たくさん あります</td><td class="jp">ぜんぜん ありません</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>英語<rt>えいご</rt></ruby>が よく わかります。</div>
+      <div class="id">Mengerti bahasa Inggris dengan baik.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>英語<rt>えいご</rt></ruby>が <ruby>少<rt>すこ</rt></ruby>し わかります。</div>
+      <div class="id">Mengerti bahasa Inggris sedikit.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>英語<rt>えいご</rt></ruby>が あまり わかりません。</div>
+      <div class="id">Tidak begitu mengerti bahasa Inggris.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">お<ruby>金<rt>かね</rt></ruby>が たくさん あります。</div>
+      <div class="id">Uang ada banyak.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">お<ruby>金<rt>かね</rt></ruby>が <ruby>全然<rt>ぜんぜん</rt></ruby> ありません。</div>
+      <div class="id">Uang tidak ada sama sekali.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ここは <ruby>少<rt>すこ</rt></ruby>し <ruby>寒<rt>さむ</rt></ruby>いです。</div>
+      <div class="id">Di sini sedikit dingin.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あの <ruby>映画<rt>えいが</rt></ruby>は <ruby>全然<rt>ぜんぜん</rt></ruby> おもしろくないです。</div>
+      <div class="id">Film itu tidak menarik sama sekali.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ～から、～</h4>
+    <p class="desc">Bagian sebelum <code>から</code> menyatakan alasan dari kalimat setelahnya.</p>
+    <div class="ex">
+      <div class="jp"><ruby>時間<rt>じかん</rt></ruby>が ありませんから、<ruby>新聞<rt>しんぶん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みません。</div>
+      <div class="id">Karena tidak ada waktu, tidak membaca surat kabar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>毎朝<rt>まいあさ</rt></ruby> <ruby>新聞<rt>しんぶん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みますか。……いいえ、<ruby>読<rt>よ</rt></ruby>みません。<ruby>時間<rt>じかん</rt></ruby>が ありませんから。</div>
+      <div class="id">Apakah membaca koran setiap pagi? ……Tidak. Karena tidak ada waktu.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> どうして</h4>
+    <div class="ex">
+      <div class="jp">どうして <ruby>朝<rt>あさ</rt></ruby> <ruby>新聞<rt>しんぶん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みませんか。……<ruby>時間<rt>じかん</rt></ruby>が ありませんから。</div>
+      <div class="id">Mengapa pagi tidak membaca koran? ……Sebab tidak ada waktu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きょうは <ruby>早<rt>はや</rt></ruby>く <ruby>帰<rt>かえ</rt></ruby>ります。……どうしてですか。……<ruby>子<rt>こ</rt></ruby>どもの <ruby>誕生日<rt>たんじょうび</rt></ruby>ですから。</div>
+      <div class="id">Hari ini pulang cepat. ……Mengapa? ……Sebab hari ulang tahun anak.</div>
+    </div>
+  </article>
+
+  <div class="compare">
+    <h5>は vs が (pengantar)</h5>
+    <p class="desc" style="margin:0"><b>は</b> → topik kalimat, hal yang sudah dikenal.<br><b>が</b> → subjek baru, penekanan, atau objek dari kata seperti 好き・わかる・ある・いる.</p>
+  </div>
+</section>
+
+<!-- ============ BAB 10 ============ -->
+<section id="bab10">
+  <div class="sec-head">
+    <div class="sec-num">10</div>
+    <div>
+      <h3>Keberadaan Benda & Orang</h3>
+      <div class="sub">あります · います · posisi</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB が あります／います</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata Kerja</th><th>Untuk</th><th>Contoh</th></tr>
+        <tr><td class="jp">あります</td><td>Benda / tumbuhan (tidak bergerak sendiri)</td><td class="jp">コンピューターが あります</td></tr>
+        <tr><td class="jp">います</td><td>Orang / hewan (bergerak sendiri)</td><td class="jp">男の 人が います</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Tempat に KB が あります／います</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>の <ruby>部屋<rt>へや</rt></ruby>に <ruby>机<rt>つくえ</rt></ruby>が あります。</div>
+      <div class="id">Di kamar saya ada meja.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>事務所<rt>じむしょ</rt></ruby>に ミラーさんが います。</div>
+      <div class="id">Di kantor ada Sdr. Miller.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>地下<rt>ちか</rt></ruby>に <ruby>何<rt>なに</rt></ruby>が ありますか。……レストランが あります。</div>
+      <div class="id">Di lantai basement ada apa? ……Ada restoran.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>受付<rt>うけつけ</rt></ruby>に だれが いますか。……<ruby>木村<rt>きむら</rt></ruby>さんが います。</div>
+      <div class="id">Di resepsionis ada siapa? ……Ada Sdr. Kimura.</div>
+    </div>
+    <div class="note">Kata Tanya <b>なに</b> dan <b>だれ</b> diikuti partikel <code>が</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB は tempat に あります／います</h4>
+    <div class="ex">
+      <div class="jp"><ruby>東京<rt>とうきょう</rt></ruby>ディズニーランドは <ruby>千葉県<rt>ちばけん</rt></ruby>に あります。</div>
+      <div class="id">Tokyo Disneyland terletak di prefektur Chiba.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>事務所<rt>じむしょ</rt></ruby>に います。</div>
+      <div class="id">Sdr. Miller ada di kantor.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>東京<rt>とうきょう</rt></ruby>ディズニーランドは どこに ありますか。……<ruby>千葉県<rt>ちばけん</rt></ruby>です。</div>
+      <div class="id">Tokyo Disneyland terletak di mana? ……Di prefektur Chiba.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB₁ の KB₂ (posisi)</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata</th><th>Arti</th><th>Kata</th><th>Arti</th></tr>
+        <tr><td class="jp">うえ</td><td>atas</td><td class="jp">なか</td><td>dalam</td></tr>
+        <tr><td class="jp">した</td><td>bawah</td><td class="jp">そと</td><td>luar</td></tr>
+        <tr><td class="jp">まえ</td><td>depan</td><td class="jp">となり</td><td>sebelah</td></tr>
+        <tr><td class="jp">うしろ</td><td>belakang</td><td class="jp">ちかく</td><td>dekat</td></tr>
+        <tr><td class="jp">みぎ</td><td>kanan</td><td class="jp">あいだ</td><td>antara</td></tr>
+        <tr><td class="jp">ひだり</td><td>kiri</td><td></td><td></td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>机<rt>つくえ</rt></ruby>の <ruby>上<rt>うえ</rt></ruby>に <ruby>写真<rt>しゃしん</rt></ruby>が あります。</div>
+      <div class="id">Di atas meja ada foto.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>郵便局<rt>ゆうびんきょく</rt></ruby>は <ruby>銀行<rt>ぎんこう</rt></ruby>の <ruby>隣<rt>となり</rt></ruby>に あります。</div>
+      <div class="id">Kantor pos ada di sebelah bank.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>本屋<rt>ほんや</rt></ruby>は <ruby>花屋<rt>はなや</rt></ruby>と スーパーの <ruby>間<rt>あいだ</rt></ruby>に あります。</div>
+      <div class="id">Toko buku ada di antara toko bunga dan pasar swalayan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>駅<rt>えき</rt></ruby>の <ruby>近<rt>ちか</rt></ruby>くで <ruby>友達<rt>ともだち</rt></ruby>に <ruby>会<rt>あ</rt></ruby>いました。</div>
+      <div class="id">Di dekat stasiun, bertemu dengan teman.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB₁ や KB₂</h4>
+    <div class="ex">
+      <div class="jp"><ruby>箱<rt>はこ</rt></ruby>の <ruby>中<rt>なか</rt></ruby>に <ruby>手紙<rt>てがみ</rt></ruby>や <ruby>写真<rt>しゃしん</rt></ruby>が あります。</div>
+      <div class="id">Di dalam kotak ada surat dan foto.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>箱<rt>はこ</rt></ruby>の <ruby>中<rt>なか</rt></ruby>に <ruby>手紙<rt>てがみ</rt></ruby>や <ruby>写真<rt>しゃしん</rt></ruby>などが あります。</div>
+      <div class="id">Di dalam kotak ada surat, foto dan lain-lainnya.</div>
+    </div>
+    <div class="note"><code>と</code> = menyebutkan semua secara setara. <code>や</code> = menyebutkan beberapa perwakilan (masih ada yang lain).</div>
+  </article>
+</section>
+
+<!-- ============ BAB 11 ============ -->
+<section id="bab11">
+  <div class="sec-head">
+    <div class="sec-num">11</div>
+    <div>
+      <h3>Kata Bantu Bilangan</h3>
+      <div class="sub">～つ · ～人 · ～台 · ～枚 · ～回 · だけ</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Cara Menghitung 1–10</h4>
+    <div class="ex">
+      <div class="jp">ひとつ、ふたつ、みっつ、よっつ、いつつ、むっつ、ななつ、やっつ、ここのつ、とお</div>
+      <div class="id">Untuk 11 ke atas digunakan angka biasa.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">りんごを 11 <ruby>買<rt>か</rt></ruby>いました。</div>
+      <div class="id">Membeli sebelas buah apel. (pakai angka biasa)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Bantu Bilangan Penting</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata Bantu</th><th>Untuk</th><th>Contoh</th></tr>
+        <tr><td class="jp">～人</td><td>Orang</td><td class="jp">ひとり、ふたり、よにん…</td></tr>
+        <tr><td class="jp">～台</td><td>Mesin, kendaraan</td><td class="jp">いちだい、にだい…</td></tr>
+        <tr><td class="jp">～枚</td><td>Benda tipis & datar</td><td class="jp">いちまい、にまい…</td></tr>
+        <tr><td class="jp">～本</td><td>Benda panjang & silinder <i>(bonus)</i></td><td class="jp">いっぽん、にほん…</td></tr>
+        <tr><td class="jp">～回</td><td>Kali</td><td class="jp">いっかい、にかい…</td></tr>
+        <tr><td class="jp">～分</td><td>Menit</td><td class="jp">いっぷん、にふん…</td></tr>
+        <tr><td class="jp">～時間</td><td>Jam (durasi)</td><td class="jp">いちじかん、にじかん…</td></tr>
+        <tr><td class="jp">～日</td><td>Hari</td><td class="jp">いちにち、ふつか…</td></tr>
+        <tr><td class="jp">～週間</td><td>Minggu</td><td class="jp">いっしゅうかん…</td></tr>
+        <tr><td class="jp">～か月</td><td>Bulan</td><td class="jp">いっかげつ、にかげつ…</td></tr>
+        <tr><td class="jp">～年</td><td>Tahun</td><td class="jp">いちねん、にねん…</td></tr>
+      </table>
+    </div>
+    <div class="note">1日 dibaca <b>いちにち</b> (bukan ついたち) bila menyatakan durasi. 20日 = <b>はつか</b> (juga pengecualian).</div>
+    <div class="note"><b>～本 (bonus):</b> Meskipun tidak ada di buku asli, ～本 sering muncul di ujian N5 untuk benda panjang seperti pulpen, botol, pohon.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Cara Menanyakan Kuantitas</h4>
+    <div class="ex">
+      <div class="jp">りんごを ４つ <ruby>買<rt>か</rt></ruby>いました。</div>
+      <div class="id">Membeli empat buah apel.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>外国人<rt>がいこくじん</rt></ruby>の <ruby>学生<rt>がくせい</rt></ruby>が ２<ruby>人<rt>にん</rt></ruby> います。</div>
+      <div class="id">Ada dua orang mahasiswa asing.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>国<rt>くに</rt></ruby>で ２か<ruby>月<rt>げつ</rt></ruby> <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>しました。</div>
+      <div class="id">Belajar bahasa Jepang di negara saya selama dua bulan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">みかんを いくつ <ruby>買<rt>か</rt></ruby>いましたか。……８つ <ruby>買<rt>か</rt></ruby>いました。</div>
+      <div class="id">Membeli berapa buah jeruk? ……Membeli delapan buah.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">この <ruby>会社<rt>かいしゃ</rt></ruby>に <ruby>外国人<rt>がいこくじん</rt></ruby>が <ruby>何人<rt>なんにん</rt></ruby> いますか。……５<ruby>人<rt>ごにん</rt></ruby> います。</div>
+      <div class="id">Di perusahaan ini ada berapa orang asing? ……Ada lima orang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>毎晩<rt>まいばん</rt></ruby> <ruby>何時間<rt>なんじかん</rt></ruby> <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>しますか。……２<ruby>時間<rt>にじかん</rt></ruby> <ruby>勉強<rt>べんきょう</rt></ruby>します。</div>
+      <div class="id">Setiap malam berapa jam belajar bahasa Jepang? ……Belajar dua jam.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">どのくらい <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>しましたか。……３<ruby>年<rt>ねん</rt></ruby> <ruby>勉強<rt>べんきょう</rt></ruby>しました。</div>
+      <div class="id">Berapa lama belajar bahasa Jepang? ……Belajar selama tiga tahun.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ～くらい (perkiraan)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>学校<rt>がっこう</rt></ruby>に <ruby>先生<rt>せんせい</rt></ruby>が 30<ruby>人<rt>にん</rt></ruby>ぐらい います。</div>
+      <div class="id">Di sekolah ada kira-kira tiga puluh orang guru.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">15<ruby>分<rt>ふん</rt></ruby>くらい かかります。</div>
+      <div class="id">Memerlukan waktu kira-kira lima belas menit.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> だけ (hanya)</h4>
+    <div class="ex">
+      <div class="jp">パワー<ruby>電気<rt>でんき</rt></ruby>に <ruby>外国人<rt>がいこくじん</rt></ruby>の <ruby>社員<rt>しゃいん</rt></ruby>が １<ruby>人<rt>ひとり</rt></ruby>だけ います。</div>
+      <div class="id">Di Power Elektronik hanya ada seorang pegawai asing.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>休<rt>やす</rt></ruby>みは <ruby>日曜日<rt>にちようび</rt></ruby>だけです。</div>
+      <div class="id">Hari libur hanya hari Minggu saja.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> Frekuensi: ～に ～回</h4>
+    <div class="ex">
+      <div class="jp">１か<ruby>月<rt>げつ</rt></ruby>に ２<ruby>回<rt>かい</rt></ruby> <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>ます。</div>
+      <div class="id">Sebulan dua kali menonton film.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 12 ============ -->
+<section id="bab12">
+  <div class="sec-head">
+    <div class="sec-num">12</div>
+    <div>
+      <h3>Waktu Lampau Kata Sifat & Perbandingan</h3>
+      <div class="sub">でした · かったです · より · いちばん</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Waktu Lampau Kalimat Nominal & な形容詞</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th></th><th>Non-lampau</th><th>Lampau</th></tr>
+        <tr><td>Positif</td><td class="jp">あめです / しずかです</td><td class="jp">あめでした / しずかでした</td></tr>
+        <tr><td>Negatif</td><td class="jp">あめじゃありません</td><td class="jp">あめじゃありませんでした</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp">きのうは <ruby>雨<rt>あめ</rt></ruby>でした。</div>
+      <div class="id">Kemarin hujan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きのうの <ruby>試験<rt>しけん</rt></ruby>は <ruby>簡単<rt>かんたん</rt></ruby>じゃ ありませんでした。</div>
+      <div class="id">Ujian kemarin tidak mudah.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Waktu Lampau い形容詞</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th></th><th>Non-lampau</th><th>Lampau</th></tr>
+        <tr><td>Positif</td><td class="jp">あついです</td><td class="jp">あつかったです</td></tr>
+        <tr><td>Negatif</td><td class="jp">あつくないです</td><td class="jp">あつくなかったです</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp">きのうは <ruby>暑<rt>あつ</rt></ruby>かったです。</div>
+      <div class="id">Kemarin panas.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きのうの パーティーは あまり <ruby>楽<rt>たの</rt></ruby>しくなかったです。</div>
+      <div class="id">Pesta kemarin tidak begitu menyenangkan.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB₁ は KB₂ より Kata Sifat です</h4>
+    <div class="ex">
+      <div class="jp">この <ruby>車<rt>くるま</rt></ruby>は あの <ruby>車<rt>くるま</rt></ruby>より <ruby>大<rt>おお</rt></ruby>きいです。</div>
+      <div class="id">Mobil ini lebih besar daripada mobil itu.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB₁ と KB₂ と どちらが Kata Sifat ですか</h4>
+    <div class="pattern">……KB₁ の ほうが Kata Sifat です</div>
+    <div class="ex">
+      <div class="jp">サッカーと <ruby>野球<rt>やきゅう</rt></ruby>と どちらが おもしろいですか。……サッカーの ほうが おもしろいです。</div>
+      <div class="id">Yang mana lebih menarik, sepak bola atau baseball? ……Sepak bola yang lebih menarik.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>北海道<rt>ほっかいどう</rt></ruby>と <ruby>大阪<rt>おおさか</rt></ruby>と どちらが <ruby>涼<rt>すず</rt></ruby>しいですか。</div>
+      <div class="id">Yang mana lebih sejuk, Hokkaido atau Osaka?</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>春<rt>はる</rt></ruby>と <ruby>秋<rt>あき</rt></ruby>と どちらが <ruby>好<rt>す</rt></ruby>きですか。</div>
+      <div class="id">Yang mana lebih suka, musim semi atau musim gugur?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> ～で いちばん Kata Sifat です</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日本料理<rt>にほんりょうり</rt></ruby>[の <ruby>中<rt>なか</rt></ruby>]で <ruby>何<rt>なに</rt></ruby>が いちばん おいしいですか。……てんぷらが いちばん おいしいです。</div>
+      <div class="id">Apa yang paling enak di antara masakan Jepang? ……Tempura yang paling enak.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ヨーロッパで どこが いちばん よかったですか。……スイスが いちばん よかったです。</div>
+      <div class="id">Daerah mana yang paling bagus di Eropa? ……Swiss yang paling bagus.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>家族<rt>かぞく</rt></ruby>で だれが いちばん <ruby>背<rt>せ</rt></ruby>が <ruby>高<rt>たか</rt></ruby>いですか。……<ruby>弟<rt>おとうと</rt></ruby>が いちばん <ruby>背<rt>せ</rt></ruby>が <ruby>高<rt>たか</rt></ruby>いです。</div>
+      <div class="id">Siapa yang paling tinggi di keluarga? ……Adik laki-laki yang paling tinggi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">１<ruby>年<rt>ねん</rt></ruby>で いつが いちばん <ruby>寒<rt>さむ</rt></ruby>いですか。……２<ruby>月<rt>がつ</rt></ruby>が いちばん <ruby>寒<rt>さむ</rt></ruby>いです。</div>
+      <div class="id">Kapan yang paling dingin dalam setahun? ……Bulan Februari.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> Kata Sifat の (pengganti KB)</h4>
+    <div class="ex">
+      <div class="jp">カリナさんの かばんは どれですか。……あの <ruby>赤<rt>あか</rt></ruby>くて、<ruby>大<rt>おお</rt></ruby>きいのです。</div>
+      <div class="id">Yang mana tas Sdr. Karina? ……Yang merah dan besar itu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>大<rt>おお</rt></ruby>きいのは どれですか。</div>
+      <div class="id">Yang besar itu yang mana?</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 13 ============ -->
+<section id="bab13">
+  <div class="sec-head">
+    <div class="sec-num">13</div>
+    <div>
+      <h3>Keinginan</h3>
+      <div class="sub">ほしいです · たいです · に行きます</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> KB が 欲しいです</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>友達<rt>ともだち</rt></ruby>が <ruby>欲<rt>ほ</rt></ruby>しいです。</div>
+      <div class="id">Saya ingin punya teman.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>何<rt>なに</rt></ruby>が いちばん <ruby>欲<rt>ほ</rt></ruby>しいですか。……<ruby>車<rt>くるま</rt></ruby>が <ruby>欲<rt>ほ</rt></ruby>しいです。</div>
+      <div class="id">Sekarang apa yang paling diinginkan? ……Ingin punya mobil.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>子<rt>こ</rt></ruby>どもが <ruby>欲<rt>ほ</rt></ruby>しいですか。……いいえ、<ruby>欲<rt>ほ</rt></ruby>しくないです。</div>
+      <div class="id">Apakah ingin punya anak? ……Tidak, tidak ingin.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja (Bentuk ます) たいです</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>沖縄<rt>おきなわ</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きたいです。</div>
+      <div class="id">Saya ingin pergi ke Okinawa.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は てんぷらを（が） <ruby>食<rt>た</rt></ruby>べたいです。</div>
+      <div class="id">Saya ingin makan Tempura.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>神戸<rt>こうべ</rt></ruby>で <ruby>何<rt>なに</rt></ruby>を（が） <ruby>買<rt>か</rt></ruby>いたいですか。……<ruby>靴<rt>くつ</rt></ruby>を <ruby>買<rt>か</rt></ruby>いたいです。</div>
+      <div class="id">Di Kobe ingin membeli apa? ……Ingin membeli sepatu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">おなかが <ruby>痛<rt>いた</rt></ruby>いですから、<ruby>何<rt>なに</rt></ruby>も <ruby>食<rt>た</rt></ruby>べたくないです。</div>
+      <div class="id">Karena perut sakit, tidak mau makan apa-apa.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> <code>ほしいです</code> dan <code>たいです</code> tidak dapat menyatakan keinginan pihak ketiga. Untuk menawarkan, gunakan <code>～は いかがですか</code> atau <code>～を のみませんか</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB(tempat) へ ～に 行きます／来ます／帰ります</h4>
+    <div class="pattern">KB(tempat) へ { Kata Kerja (Bentuk ます) / KB } に 行きます</div>
+    <div class="ex">
+      <div class="jp"><ruby>神戸<rt>こうべ</rt></ruby>へ インド<ruby>料理<rt>りょうり</rt></ruby>を <ruby>食<rt>た</rt></ruby>べに <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pergi makan masakan India ke Kobe.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>神戸<rt>こうべ</rt></ruby>へ <ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pergi ke Kobe untuk belanja.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>へ <ruby>美術<rt>びじゅつ</rt></ruby>の <ruby>勉強<rt>べんきょう</rt></ruby>に <ruby>来<rt>き</rt></ruby>ました。</div>
+      <div class="id">Datang ke Jepang untuk belajar seni.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あした <ruby>京都<rt>きょうと</rt></ruby>の お<ruby>祭<rt>まつ</rt></ruby>りに <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Besok pergi ke perayaan di Kyoto. (event: cukup pakai KB + に)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> どこか／何か</h4>
+    <p class="desc"><code>どこか</code> dan <code>何か</code> bisa dipakai <b>tanpa partikel</b> へ/を dalam percakapan santai.</p>
+    <div class="ex">
+      <div class="jp"><ruby>冬休<rt>ふゆやす</rt></ruby>みは どこか[へ] <ruby>行<rt>い</rt></ruby>きましたか。……はい。<ruby>北海道<rt>ほっかいどう</rt></ruby>へ スキーに <ruby>行<rt>い</rt></ruby>きました。</div>
+      <div class="id">Pada liburan musim dingin pergi ke mana? ……Ya, pergi ke Hokkaido untuk bermain ski.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">のどが かわきましたから、<ruby>何<rt>なに</rt></ruby>か[を] <ruby>飲<rt>の</rt></ruby>みたいです。</div>
+      <div class="id">Karena haus, ingin minum sesuatu.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> ご～</h4>
+    <div class="ex">
+      <div class="jp">ご<ruby>注文<rt>ちゅうもん</rt></ruby>は？</div>
+      <div class="id">Mau pesan apa?</div>
+    </div>
+  </article>
+
+  <div class="compare">
+    <h5>たいです vs ましょうか</h5>
+    <p class="desc" style="margin:0"><b>たいです</b> → menyatakan keinginan sendiri ("saya ingin…").<br><b>ましょうか</b> → menawarkan untuk melakukan sesuatu bagi orang lain ("bagaimana kalau saya…").</p>
+  </div>
+</section>
+
+<!-- ============ BAB 14 ============ -->
+<section id="bab14">
+  <div class="sec-head">
+    <div class="sec-num">14</div>
+    <div>
+      <h3>Bentuk て</h3>
+      <div class="sub">てください · ています · ましょうか</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Kelompok Kata Kerja</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kelompok</th><th>Ciri</th><th>Contoh</th></tr>
+        <tr><td>I</td><td>Akhiran ます bunyi kolom い</td><td class="jp">かきます、のみます、かえります</td></tr>
+        <tr><td>II</td><td>Akhiran ます bunyi kolom え (sebagian い)</td><td class="jp">たべます、みせます、みます</td></tr>
+        <tr><td>III</td><td>します、KB + します、きます</td><td class="jp">します、べんきょうします、きます</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Cara Membuat Bentuk て</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kelompok</th><th>Akhiran ます</th><th>Perubahan</th><th>Contoh</th></tr>
+        <tr><td rowspan="4">I</td><td class="jp">い・ち・り</td><td>→ って</td><td class="jp">かいます → かって</td></tr>
+        <tr><td class="jp">み・び・に</td><td>→ んで</td><td class="jp">のみます → のんで</td></tr>
+        <tr><td class="jp">き</td><td>→ いて</td><td class="jp">かきます → かいて</td></tr>
+        <tr><td class="jp">ぎ</td><td>→ いで</td><td class="jp">いそぎます → いそいで</td></tr>
+        <tr><td>I (pengecualian)</td><td class="jp">いきます</td><td>→ いって</td><td class="jp">いきます → いって</td></tr>
+        <tr><td>I</td><td class="jp">し</td><td>+ て</td><td class="jp">かします → かして</td></tr>
+        <tr><td>II</td><td>semua</td><td>+ て</td><td class="jp">たべます → たべて</td></tr>
+        <tr><td>III</td><td class="jp">します / きます</td><td>→ して / きて</td><td class="jp">します → して、きます → きて</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja Bentuk て ください</h4>
+    <div class="ex">
+      <div class="jp">すみませんが、この <ruby>漢字<rt>かんじ</rt></ruby>の <ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えて ください。</div>
+      <div class="id">Permisi, tolong ajarkan cara membaca Kanji ini. (permintaan)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ボールペンで <ruby>名前<rt>なまえ</rt></ruby>を <ruby>書<rt>か</rt></ruby>いて ください。</div>
+      <div class="id">Tolong tuliskan nama dengan bolpoin. (perintah)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">どうぞ たくさん <ruby>食<rt>た</rt></ruby>べて ください。</div>
+      <div class="id">Silakan makan banyak. (ajakan)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> Kata Kerja Bentuk て います (sedang)</h4>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>今<rt>いま</rt></ruby> <ruby>電話<rt>でんわ</rt></ruby>を かけて います。</div>
+      <div class="id">Sdr. Miller sedang menelepon.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>って いますか。……はい、<ruby>降<rt>ふ</rt></ruby>って います。／いいえ、<ruby>降<rt>ふ</rt></ruby>って いません。</div>
+      <div class="id">Sekarang hujan turun? ……Ya, turun. / Tidak, tidak turun.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> Kata Kerja (Bentuk ます) ましょうか</h4>
+    <div class="ex">
+      <div class="jp">あしたも <ruby>来<rt>き</rt></ruby>ましょうか。……ええ、10<ruby>時<rt>じ</rt></ruby>に <ruby>来<rt>き</rt></ruby>て ください。</div>
+      <div class="id">Bagaimana kalau besok saya juga datang? ……Ya, tolong datang pukul sepuluh.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>傘<rt>かさ</rt></ruby>を <ruby>貸<rt>か</rt></ruby>しましょうか。……すみません。お<ruby>願<rt>ねが</rt></ruby>いします。</div>
+      <div class="id">Bagaimana kalau saya pinjamkan payung? ……Terima kasih. Tolong pinjamkan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>荷物<rt>にもつ</rt></ruby>を <ruby>持<rt>も</rt></ruby>ちましょうか。……いいえ、けっこうです。</div>
+      <div class="id">Bagaimana kalau saya membawa barang? ……Tidak, terima kasih.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> KB が Kata Kerja (fenomena alam)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>って います。</div>
+      <div class="id">Hujan turun.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんが いませんね。</div>
+      <div class="id">Sdr. Miller tidak ada ya.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">7</span> すみませんが</h4>
+    <div class="ex">
+      <div class="jp">すみませんが、<ruby>塩<rt>しお</rt></ruby>を <ruby>取<rt>と</rt></ruby>って ください。</div>
+      <div class="id">Maaf, tolong ambilkan garam.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>失礼<rt>しつれい</rt></ruby>ですが、お<ruby>名前<rt>なまえ</rt></ruby>は？</div>
+      <div class="id">Maaf, siapa namanya?</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 15 ============ -->
+<section id="bab15">
+  <div class="sec-head">
+    <div class="sec-num">15</div>
+    <div>
+      <h3>Izin & Larangan</h3>
+      <div class="sub">てもいいですか · てはいけません · ています</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Kata Kerja Bentuk て も いいですか</h4>
+    <div class="ex">
+      <div class="jp"><ruby>写真<rt>しゃしん</rt></ruby>を <ruby>撮<rt>と</rt></ruby>っても いいですか。</div>
+      <div class="id">Boleh mengambil foto?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ここで たばこを <ruby>吸<rt>す</rt></ruby>っても いいですか。……ええ、[<ruby>吸<rt>す</rt></ruby>っても] いいですよ。／すみません、ちょっと……。のどが <ruby>痛<rt>いた</rt></ruby>いですから。</div>
+      <div class="id">Boleh merokok di sini? ……Ya, boleh. / Maaf, tidak boleh. Sebab kerongkongan sakit.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">……いいえ、[<ruby>吸<rt>す</rt></ruby>っては] いけません。<ruby>禁煙<rt>きんえん</rt></ruby>ですから。</div>
+      <div class="id">……Tidak, tidak boleh. Sebab dilarang merokok.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja Bentuk て は いけません</h4>
+    <div class="ex">
+      <div class="jp">ここで たばこを <ruby>吸<rt>す</rt></ruby>っては いけません。<ruby>禁煙<rt>きんえん</rt></ruby>ですから。</div>
+      <div class="id">Tidak boleh merokok di sini. Sebab dilarang merokok.</div>
+    </div>
+    <div class="warn">Ekspresi ini tidak dapat dipakai oleh bawahan terhadap atasan.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja Bentuk て います (keadaan)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>結婚<rt>けっこん</rt></ruby>して います。</div>
+      <div class="id">Saya telah menikah.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>田中<rt>たなか</rt></ruby>さんを <ruby>知<rt>し</rt></ruby>って います。</div>
+      <div class="id">Saya kenal Sdr. Tanaka.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>車<rt>くるま</rt></ruby>を <ruby>持<rt>も</rt></ruby>って います。</div>
+      <div class="id">Saya memiliki mobil. (keadaan: memiliki)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>今<rt>いま</rt></ruby>、かばんを <ruby>持<rt>も</rt></ruby>って います。</div>
+      <div class="id">Sekarang saya sedang memegang tas. (sedang: memegang)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>大阪<rt>おおさか</rt></ruby>に <ruby>住<rt>す</rt></ruby>んで います。</div>
+      <div class="id">Saya tinggal di Osaka.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> Negatif dari <code>知って います</code> adalah <code>知りません</code> (bukan <code>知って いません</code>).</div>
+    <div class="ex">
+      <div class="jp"><ruby>市役所<rt>しやくしょ</rt></ruby>の <ruby>電話番号<rt>でんわばんごう</rt></ruby>を <ruby>知<rt>し</rt></ruby>って いますか。……はい、<ruby>知<rt>し</rt></ruby>って います。／いいえ、<ruby>知<rt>し</rt></ruby>りません。</div>
+      <div class="id">Apakah tahu nomor telepon kantor wali kota? ……Ya, tahu. / Tidak, tidak tahu.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> <code>もって います</code> = (1) sedang memegang di tangan, (2) memiliki — tergantung konteks.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ています (kebiasaan / pekerjaan)</h4>
+    <div class="ex">
+      <div class="jp">IMC は コンピューターソフトを <ruby>作<rt>つく</rt></ruby>って います。</div>
+      <div class="id">IMC memproduksi perangkat lunak komputer.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">スーパーで ナンプラーを <ruby>売<rt>う</rt></ruby>って います。</div>
+      <div class="id">Di pasar swalayan dijual kecap ikan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは IMC で <ruby>働<rt>はたら</rt></ruby>いて います。</div>
+      <div class="id">Sdr. Miller bekerja di IMC.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>妹<rt>いもうと</rt></ruby>は <ruby>大学<rt>だいがく</rt></ruby>で <ruby>勉強<rt>べんきょう</rt></ruby>して います。</div>
+      <div class="id">Adik perempuan saya kuliah di universitas.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB に Kata Kerja (hasil aksi & tempat)</h4>
+    <div class="ex">
+      <div class="jp">ここに <ruby>入<rt>はい</rt></ruby>っては いけません。</div>
+      <div class="id">Tidak boleh masuk ke sini.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ここに <ruby>座<rt>すわ</rt></ruby>っても いいですか。</div>
+      <div class="id">Boleh duduk di sini?</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>京都駅<rt>きょうとえき</rt></ruby>から 16<ruby>番<rt>ばん</rt></ruby>の バスに <ruby>乗<rt>の</rt></ruby>って ください。</div>
+      <div class="id">Silakan naik bus nomor 16 dari stasiun Kyoto.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ここに <ruby>車<rt>くるま</rt></ruby>を <ruby>止<rt>と</rt></ruby>めて ください。</div>
+      <div class="id">Hentikan mobil di sini.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ここに <ruby>住所<rt>じゅうしょ</rt></ruby>を <ruby>書<rt>か</rt></ruby>いて ください。</div>
+      <div class="id">Tuliskan alamat di sini.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 16 ============ -->
+<section id="bab16">
+  <div class="sec-head">
+    <div class="sec-num">16</div>
+    <div>
+      <h3>Menyambung Kalimat</h3>
+      <div class="sub">て · てから · が · どうやって</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Menyambung Kalimat</h4>
+    <div class="ex">
+      <div class="jp"><ruby>朝<rt>あさ</rt></ruby> ジョギングを して、シャワーを <ruby>浴<rt>あ</rt></ruby>びて、<ruby>会社<rt>かいしゃ</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Pagi joging, mandi, kemudian pergi ke perusahaan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>神戸<rt>こうべ</rt></ruby>へ <ruby>行<rt>い</rt></ruby>って、<ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>て、お<ruby>茶<rt>ちゃ</rt></ruby>を <ruby>飲<rt>の</rt></ruby>みました。</div>
+      <div class="id">Pergi ke Kobe, menonton film, kemudian minum teh.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Menyambung Kata Sifat & Kata Benda</h4>
+    <div class="pattern">い形容詞：～い → ～くて<br>な形容詞：[な] → ～で<br>KB：～で</div>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>若<rt>わか</rt></ruby>くて、<ruby>元気<rt>げんき</rt></ruby>です。</div>
+      <div class="id">Sdr. Miller muda dan sehat.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きのうは <ruby>天気<rt>てんき</rt></ruby>が よくて、<ruby>暑<rt>あつ</rt></ruby>かったです。</div>
+      <div class="id">Kemarin cuaca baik dan panas.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは ハンサムで、<ruby>親切<rt>しんせつ</rt></ruby>です。</div>
+      <div class="id">Sdr. Miller ganteng dan baik hati.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>奈良<rt>なら</rt></ruby>は <ruby>静<rt>しず</rt></ruby>かで、きれいな <ruby>町<rt>まち</rt></ruby>です。</div>
+      <div class="id">Nara adalah kota yang tenang dan indah.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">カリナさんは インドネシア<ruby>人<rt>じん</rt></ruby>で、<ruby>富士大学<rt>ふじだいがく</rt></ruby>の <ruby>留学生<rt>りゅうがくせい</rt></ruby>です。</div>
+      <div class="id">Sdr. Karina orang Indonesia dan pelajar asing dari Universitas Fuji.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">カリナさんは <ruby>学生<rt>がくせい</rt></ruby>で、マリアさんは <ruby>主婦<rt>しゅふ</rt></ruby>です。</div>
+      <div class="id">Sdr. Karina mahasiswa, sedangkan Sdr. Maria ibu rumah tangga.</div>
+    </div>
+    <div class="note"><code>で</code> di atas juga bisa menyatakan <b>kontras antar subjek</b> (Karina = mahasiswa, Maria = ibu rumah tangga).</div>
+    <div class="warn"><b>Perhatian:</b> Jika nilai pembicaranya berbeda (positif-negatif), gunakan <code>が</code>.<br>×この <ruby>部屋<rt>へや</rt></ruby>は <ruby>狭<rt>せま</rt></ruby>くて、きれいです。<br>○この <ruby>部屋<rt>へや</rt></ruby>は <ruby>狭<rt>せま</rt></ruby>いですが、きれいです。</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja₁ Bentuk てから Kata Kerja₂</h4>
+    <div class="ex">
+      <div class="jp">お<ruby>金<rt>かね</rt></ruby>を <ruby>入<rt>い</rt></ruby>れてから、ボタンを <ruby>押<rt>お</rt></ruby>して ください。</div>
+      <div class="id">Tekan tombol setelah memasukkan uang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">もう <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べましたか。……この <ruby>仕事<rt>しごと</rt></ruby>が <ruby>終<rt>お</rt></ruby>わってから、<ruby>食<rt>た</rt></ruby>べます。</div>
+      <div class="id">Sudah makan siang? ……Setelah selesai pekerjaan ini, baru mau makan.</div>
+    </div>
+    <div class="note">Subjek untuk <code>てから</code> ditunjukkan dengan <code>が</code>.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB₁ は KB₂ が Kata Sifat</h4>
+    <div class="ex">
+      <div class="jp"><ruby>大阪<rt>おおさか</rt></ruby>は <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>が おいしいです。</div>
+      <div class="id">Osaka makanannya enak.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ドイツの フランケンは ワインが <ruby>有名<rt>ゆうめい</rt></ruby>です。</div>
+      <div class="id">Franken di Jerman anggurnya terkenal.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">マリアさんは <ruby>髪<rt>かみ</rt></ruby>が <ruby>長<rt>なが</rt></ruby>いです。</div>
+      <div class="id">Sdr. Maria rambutnya panjang.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB を Kata Kerja (titik awal)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>７時<rt>しちじ</rt></ruby>に うちを <ruby>出<rt>で</rt></ruby>ます。</div>
+      <div class="id">Pada pukul tujuh keluar dari rumah.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>梅田<rt>うめだ</rt></ruby>で <ruby>電車<rt>でんしゃ</rt></ruby>を <ruby>降<rt>お</rt></ruby>りました。</div>
+      <div class="id">Turun kereta listrik di Umeda.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> どうやって</h4>
+    <div class="ex">
+      <div class="jp"><ruby>大学<rt>だいがく</rt></ruby>まで どうやって <ruby>行<rt>い</rt></ruby>きますか。……<ruby>京都駅<rt>きょうとえき</rt></ruby>から 16<ruby>番<rt>ばん</rt></ruby>の バスに <ruby>乗<rt>の</rt></ruby>って、<ruby>大学前<rt>だいがくまえ</rt></ruby>で <ruby>降<rt>お</rt></ruby>ります。</div>
+      <div class="id">Bagaimana caranya pergi ke universitas? ……Dari stasiun Kyoto, naik bus nomor 16, turun di Daigakumae.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">7</span> どれ／どの KB</h4>
+    <div class="ex">
+      <div class="jp">ミラーさんの <ruby>傘<rt>かさ</rt></ruby>は どれですか。……あの <ruby>青<rt>あお</rt></ruby>い <ruby>傘<rt>かさ</rt></ruby>です。</div>
+      <div class="id">Yang mana payung Sdr. Miller? ……Payung yang biru itu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">サントスさんは どの <ruby>人<rt>ひと</rt></ruby>ですか。……あの <ruby>背<rt>せ</rt></ruby>が <ruby>高<rt>たか</rt></ruby>くて、<ruby>髪<rt>かみ</rt></ruby>が <ruby>黒<rt>くろ</rt></ruby>い <ruby>人<rt>ひと</rt></ruby>です。</div>
+      <div class="id">Sdr. Santos orangnya yang mana? ……Orang yang badannya tinggi dan rambutnya hitam.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 17 ============ -->
+<section id="bab17">
+  <div class="sec-head">
+    <div class="sec-num">17</div>
+    <div>
+      <h3>Bentuk ない</h3>
+      <div class="sub">ないでください · なければなりません · なくてもいいです</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Cara Membuat Bentuk ない</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kelompok</th><th>Aturan</th><th>Contoh</th></tr>
+        <tr><td>I</td><td>Bunyi kolom い → kolom あ<br>(い → わ bila berdiri sendiri)</td><td class="jp">かきます → かかない<br>よびます → よばない<br>かいます → かわない</td></tr>
+        <tr><td>II</td><td>Sama dengan bentuk ます</td><td class="jp">たべます → たべない<br>みます → みない</td></tr>
+        <tr><td>III</td><td>します → しない<br>きます → こない</td><td class="jp">べんきょうします → べんきょうしない</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja (Bentuk ない) ないで ください</h4>
+    <div class="ex">
+      <div class="jp">ここで <ruby>写真<rt>しゃしん</rt></ruby>を <ruby>撮<rt>と</rt></ruby>らないで ください。</div>
+      <div class="id">Jangan mengambil foto di sini!</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>元気<rt>げんき</rt></ruby>ですから、<ruby>心配<rt>しんぱい</rt></ruby>しないで ください。</div>
+      <div class="id">Karena saya sehat, jangan khawatir.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja (Bentuk ない) なければ なりません</h4>
+    <div class="ex">
+      <div class="jp"><ruby>薬<rt>くすり</rt></ruby>を <ruby>飲<rt>の</rt></ruby>まなければ なりません。</div>
+      <div class="id">Harus minum obat.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> Kata Kerja (Bentuk ない) なくても いいです</h4>
+    <div class="ex">
+      <div class="jp">あした <ruby>来<rt>こ</rt></ruby>なくても いいです。</div>
+      <div class="id">Besok tidak perlu datang.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> Pentopikan Objek</h4>
+    <p class="desc">Jika objek langsung dijadikan topik, partikel <code>を</code> dihilangkan, lalu partikel <code>は</code> diletakkan di depan kalimat.</p>
+    <div class="ex">
+      <div class="jp"><ruby>荷物<rt>にもつ</rt></ruby>は ここに <ruby>置<rt>お</rt></ruby>かないで ください。</div>
+      <div class="id">Barangnya jangan diletakkan di sini.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>昼<rt>ひる</rt></ruby>ごはんは <ruby>会社<rt>かいしゃ</rt></ruby>の <ruby>食堂<rt>しょくどう</rt></ruby>で <ruby>食<rt>た</rt></ruby>べます。</div>
+      <div class="id">Makan siangnya makan di kantin perusahaan.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> KB(waktu) までに Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp"><ruby>会議<rt>かいぎ</rt></ruby>は <ruby>５時<rt>ごじ</rt></ruby>までに <ruby>終<rt>お</rt></ruby>わります。</div>
+      <div class="id">Rapat selesai sebelum pukul lima.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>土曜日<rt>どようび</rt></ruby>までに <ruby>本<rt>ほん</rt></ruby>を <ruby>返<rt>かえ</rt></ruby>さなければ なりません。</div>
+      <div class="id">Mengembalikan buku sampai hari Sabtu.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> <code>まで</code> = titik akhir aksi yang sedang berlangsung (<ruby>５時<rt>ごじ</rt></ruby>まで <ruby>働<rt>はたら</rt></ruby>きます). <code>までに</code> = batas waktu aksi/peristiwa.</div>
+  </article>
+</section>
+
+<!-- ============ BAB 18 ============ -->
+<section id="bab18">
+  <div class="sec-head">
+    <div class="sec-num">18</div>
+    <div>
+      <h3>Bentuk Kamus</h3>
+      <div class="sub">ことができます · 趣味は · まえに</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Cara Membuat Bentuk Kamus</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kelompok</th><th>Aturan</th><th>Contoh</th></tr>
+        <tr><td>I</td><td>Kolom い → kolom う</td><td class="jp">かきます → かく<br>よびます → よぶ<br>かいます → かう</td></tr>
+        <tr><td>II</td><td>+ る</td><td class="jp">たべます → たべる<br>みます → みる</td></tr>
+        <tr><td>III</td><td>します → する<br>きます → くる</td><td class="jp">べんきょうします → べんきょうする</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> KB / Kata Kerja Bentuk Kamus ことが できます</h4>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>日本語<rt>にほんご</rt></ruby>が できます。</div>
+      <div class="id">Sdr. Miller bisa berbahasa Jepang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>雪<rt>ゆき</rt></ruby>が たくさん <ruby>降<rt>ふ</rt></ruby>りましたから、ことしは スキーが できます。</div>
+      <div class="id">Karena salju turun banyak, tahun ini dapat bermain ski.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>漢字<rt>かんじ</rt></ruby>を <ruby>読<rt>よ</rt></ruby>む ことが できます。</div>
+      <div class="id">Sdr. Miller bisa membaca Kanji.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">カードで <ruby>払<rt>はら</rt></ruby>う ことが できます。</div>
+      <div class="id">Dapat membayar dengan kartu.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> 趣味は ～ です</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>の <ruby>趣味<rt>しゅみ</rt></ruby>は <ruby>音楽<rt>おんがく</rt></ruby>です。</div>
+      <div class="id">Hobi saya adalah musik.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>の <ruby>趣味<rt>しゅみ</rt></ruby>は <ruby>音楽<rt>おんがく</rt></ruby>を <ruby>聞<rt>き</rt></ruby>く ことです。</div>
+      <div class="id">Hobi saya adalah mendengarkan musik.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> Kata Kerja Bentuk Kamus まえに</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>く</rt></ruby>る まえに、<ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>しました。</div>
+      <div class="id">Sebelum datang di Jepang, belajar bahasa Jepang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>寝<rt>ね</rt></ruby>る まえに、<ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みます。</div>
+      <div class="id">Sebelum tidur, membaca buku.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>食事<rt>しょくじ</rt></ruby>の まえに、<ruby>手<rt>て</rt></ruby>を <ruby>洗<rt>あら</rt></ruby>います。</div>
+      <div class="id">Sebelum makan, mencuci tangan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>田中<rt>たなか</rt></ruby>さんは 1<ruby>時間<rt>いちじかん</rt></ruby>まえに、<ruby>出<rt>で</rt></ruby>かけました。</div>
+      <div class="id">Sdr. Tanaka telah keluar sejam yang lalu.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> なかなか · ぜひ</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>では なかなか <ruby>馬<rt>うま</rt></ruby>を <ruby>見<rt>み</rt></ruby>る ことが できません。</div>
+      <div class="id">Di Jepang tidak mudah untuk melihat kuda.</div>
+    </div>
+    <div class="note"><b>なかなか:</b> selalu dipakai dengan kalimat negatif, artinya "tidak mudah / tidak bisa dengan mudah".</div>
+    <div class="ex">
+      <div class="jp">ぜひ <ruby>北海道<rt>ほっかいどう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きたいです。</div>
+      <div class="id">Ingin sekali pergi ke Hokkaido.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ぜひ <ruby>遊<rt>あそ</rt></ruby>びに <ruby>来<rt>き</rt></ruby>て ください。</div>
+      <div class="id">Sungguh diharapkan untuk datang bermain.</div>
+    </div>
+    <div class="note"><b>ぜひ:</b> dipakai bersama keinginan/harapan pembicara untuk menekankan. Tidak dipakai untuk menyatakan fakta.</div>
+  </article>
+</section>
+
+<!-- ============ BAB 19 ============ -->
+<section id="bab19">
+  <div class="sec-head">
+    <div class="sec-num">19</div>
+    <div>
+      <h3>Pengalaman & Perubahan</h3>
+      <div class="sub">たことがあります · たり · くなります</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Kata Kerja Bentuk た ことが あります</h4>
+    <div class="ex">
+      <div class="jp"><ruby>馬<rt>うま</rt></ruby>に <ruby>乗<rt>の</rt></ruby>った ことが あります。</div>
+      <div class="id">Pernah berkuda.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>去年<rt>きょねん</rt></ruby> <ruby>北海道<rt>ほっかいどう</rt></ruby>で <ruby>馬<rt>うま</rt></ruby>に <ruby>乗<rt>の</rt></ruby>りました。</div>
+      <div class="id">Tahun lalu berkuda di Hokkaido. (kenyataan lampau, bukan pengalaman)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja Bentuk たり、Kata Kerja Bentuk たり します</h4>
+    <div class="ex">
+      <div class="jp"><ruby>日曜日<rt>にちようび</rt></ruby>は テニスを したり、<ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>たり します。</div>
+      <div class="id">Pada hari Minggu bermain tenis, dan menonton film.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日曜日<rt>にちようび</rt></ruby>は <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>たり、テニスを したり します。</div>
+      <div class="id">Pada hari Minggu menonton film, dan bermain tenis. (urutan bisa dibalik, tidak masalah)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日曜日<rt>にちようび</rt></ruby>は テニスを して、<ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>ました。</div>
+      <div class="id">Pada hari Minggu, bermain tenis, kemudian menonton film. (berurutan)</div>
+    </div>
+    <div class="note"><code>たり～たり</code> = aksi yang mewakili (tidak berurutan). <code>て、て、</code> = aksi berurutan sesuai urutan.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Perubahan Kondisi</h4>
+    <div class="pattern">い形容詞：～い → ～く なります<br>な形容詞：[な] → ～に なります<br>KB → ～に なります</div>
+    <div class="ex">
+      <div class="jp"><ruby>寒<rt>さむ</rt></ruby>い → <ruby>寒<rt>さむ</rt></ruby>く なります</div>
+      <div class="id">menjadi dingin</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>元気<rt>げんき</rt></ruby>[な] → <ruby>元気<rt>げんき</rt></ruby>に なります</div>
+      <div class="id">menjadi sehat</div>
+    </div>
+    <div class="ex">
+      <div class="jp">25<ruby>歳<rt>さい</rt></ruby> → 25<ruby>歳<rt>さい</rt></ruby>に なります</div>
+      <div class="id">menjadi (umur) dua puluh lima tahun</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 20 ============ -->
+<section id="bab20">
+  <div class="sec-head">
+    <div class="sec-num">20</div>
+    <div>
+      <h3>Bentuk Sopan & Bentuk Biasa</h3>
+      <div class="sub">普通形 · 会話 · けど</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Perbandingan Bentuk</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Bentuk Sopan</th><th>Bentuk Biasa</th></tr>
+        <tr><td class="jp">あした <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</td><td class="jp">あした <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>く。</td></tr>
+        <tr><td class="jp"><ruby>毎日<rt>まいにち</rt></ruby> <ruby>忙<rt>いそが</rt></ruby>しいです。</td><td class="jp"><ruby>毎日<rt>まいにち</rt></ruby> <ruby>忙<rt>いそが</rt></ruby>しい。</td></tr>
+        <tr><td class="jp"><ruby>相撲<rt>すもう</rt></ruby>が <ruby>好<rt>す</rt></ruby>きです。</td><td class="jp"><ruby>相撲<rt>すもう</rt></ruby>が <ruby>好<rt>す</rt></ruby>きだ。</td></tr>
+        <tr><td class="jp"><ruby>富士山<rt>ふじさん</rt></ruby>に <ruby>登<rt>のぼ</rt></ruby>りたいです。</td><td class="jp"><ruby>富士山<rt>ふじさん</rt></ruby>に <ruby>登<rt>のぼ</rt></ruby>りたい。</td></tr>
+        <tr><td class="jp">ドイツへ <ruby>行<rt>い</rt></ruby>った ことが ありません。</td><td class="jp">ドイツへ <ruby>行<rt>い</rt></ruby>った ことが ない。</td></tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Pembagian Pemakaian</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Bentuk Sopan</th><th>Bentuk Biasa</th></tr>
+        <tr><td>Orang baru dikenal, atasan, orang yang tidak begitu akrab</td><td>Teman akrab, rekan, percakapan antar keluarga</td></tr>
+      </table>
+    </div>
+    <div class="note"><b>Ketika menulis:</b> Surat tertulis → bentuk sopan. Makalah, laporan, catatan harian → bentuk biasa.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Percakapan Bentuk Biasa</h4>
+    <div class="ex">
+      <div class="jp">コーヒーを <ruby>飲<rt>の</rt></ruby>む？……うん、<ruby>飲<rt>の</rt></ruby>む。</div>
+      <div class="id">Mau minum kopi? ……Ya, mau minum.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>今晩<rt>こんばん</rt></ruby> <ruby>暇<rt>ひま</rt></ruby>？……うん、<ruby>暇<rt>ひま</rt></ruby>／<ruby>暇<rt>ひま</rt></ruby>だ／<ruby>暇<rt>ひま</rt></ruby>だよ。／うん、<ruby>暇<rt>ひま</rt></ruby>じゃない。</div>
+      <div class="id">Nanti malam luang? ……Ya, luang. / Tidak, tidak luang.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ごはん[を] <ruby>食<rt>た</rt></ruby>べる？</div>
+      <div class="id">Mau makan?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">あした <ruby>京都<rt>きょうと</rt></ruby>[へ] <ruby>行<rt>い</rt></ruby>かない？</div>
+      <div class="id">Bagaimana kalau besok ke Kyoto?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">この りんご[は] おいしいね。</div>
+      <div class="id">Apel ini enak ya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">そこに はさみ[が] ある？</div>
+      <div class="id">Di situ ada gunting?</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>辞書<rt>じしょ</rt></ruby>、<ruby>持<rt>も</rt></ruby>って[い]る？……うん、<ruby>持<rt>も</rt></ruby>って[い]る。／うん、<ruby>持<rt>も</rt></ruby>って[い]ない。</div>
+      <div class="id">Punya kamus? ……Ya, punya. / Tidak, tidak punya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">その カレー[は] おいしい？……うん、<ruby>辛<rt>から</rt></ruby>いけど、おいしい。</div>
+      <div class="id">Kare itu enak? ……Ya, pedas, tetapi enak.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>相撲<rt>すもう</rt></ruby>の チケット[が] あるけど、いっしょに <ruby>行<rt>い</rt></ruby>かない？……いいね。</div>
+      <div class="id">Punya tiket sumo, bagaimana kalau kita pergi sama-sama? ……Bagus ya.</div>
+    </div>
+    <div class="note"><b>Catatan:</b> Partikel <code>で, に, から, まで, と</code> tidak dihilangkan karena konteksnya menjadi tidak jelas.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> ている → てる (dalam percakapan)</h4>
+    <p class="desc">Dalam bentuk biasa, <code>い</code> dari <code>～ている</code> sering dihilangkan, sehingga menjadi <code>～てる</code>.</p>
+    <div class="ex">
+      <div class="jp"><ruby>辞書<rt>じしょ</rt></ruby>、<ruby>持<rt>も</rt></ruby>ってる？</div>
+      <div class="id">Punya kamus? (bentuk santai dari 持っていますか)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさん、<ruby>今<rt>いま</rt></ruby> <ruby>何<rt>なに</rt></ruby>してる？</div>
+      <div class="id">Sdr. Miller, sedang apa? (dari 何をしていますか)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> けど (tapi, tetapi)</h4>
+    <p class="desc"><code>けど</code> punya fungsi sama dengan <code>が</code>, sering dipakai dalam percakapan santai sebagai penghubung antar kalimat.</p>
+    <div class="ex">
+      <div class="jp">その カレー[は] おいしい？……うん、<ruby>辛<rt>から</rt></ruby>いけど、おいしい。</div>
+      <div class="id">Kare itu enak? ……Ya, pedas, tetapi enak.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>相撲<rt>すもう</rt></ruby>の チケット[が] あるけど、いっしょに <ruby>行<rt>い</rt></ruby>かない？</div>
+      <div class="id">Punya tiket sumo, bagaimana kalau kita pergi sama-sama?</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 21 ============ -->
+<section id="bab21">
+  <div class="sec-head">
+    <div class="sec-num">21</div>
+    <div>
+      <h3>Pendapat & Ucapan</h3>
+      <div class="sub">と思います · と言います · でしょう</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Bentuk Biasa と 思います</h4>
+    <div class="ex">
+      <div class="jp">あした <ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>ると <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">Saya kira besok hujan turun.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">テレーザちゃんは もう <ruby>寝<rt>ね</rt></ruby>たと <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">Saya kira Teresa sudah tidur.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは この ニュースを <ruby>知<rt>し</rt></ruby>って いますか。……いいえ、<ruby>知<rt>し</rt></ruby>らないと <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">Apakah Sdr. Miller tahu berita ini? ……Tidak, saya kira dia tidak tahu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日本<rt>にほん</rt></ruby>は <ruby>物価<rt>ぶっか</rt></ruby>が <ruby>高<rt>たか</rt></ruby>いと <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">Saya pikir Jepang harga barangnya mahal.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ケータイは <ruby>便利<rt>べんり</rt></ruby>ですね。……<ruby>私<rt>わたし</rt></ruby>も そう <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">HP itu praktis ya. ……Saya rasa begitu juga.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> ～について どう思いますか</h4>
+    <p class="desc">Pola untuk menanyakan pendapat tentang sesuatu. <code>～について</code> artinya "tentang ～".</p>
+    <div class="ex">
+      <div class="jp"><ruby>新<rt>あたら</rt></ruby>しい <ruby>空港<rt>くうこう</rt></ruby>に ついて どう <ruby>思<rt>おも</rt></ruby>いますか。……きれいですが、ちょっと <ruby>交通<rt>こうつう</rt></ruby>が <ruby>不便<rt>ふべん</rt></ruby>だと <ruby>思<rt>おも</rt></ruby>います。</div>
+      <div class="id">Mengenai bandara baru, menurut Anda bagaimana? ……Bersih, tetapi lalu lintasnya kurang praktis.</div>
+    </div>
+    <div class="note"><b>Perhatian:</b> Setelah <code>どう</code> tidak dibubuhi <code>と</code>. Yang pakai <code>と</code> adalah kalimat isi pendapatnya.</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> "Kalimat" Bentuk Biasa と 言います</h4>
+    <p class="desc">Ada 2 cara: <b>kutipan langsung</b> (pakai 「」) dan <b>kutipan tidak langsung</b> (rangkuman pakai bentuk biasa).</p>
+    <div class="ex">
+      <div class="jp"><ruby>寝<rt>ね</rt></ruby>る まえに、「お<ruby>休<rt>やす</rt></ruby>みなさい」と <ruby>言<rt>い</rt></ruby>います。</div>
+      <div class="id">Sebelum tidur mengucapkan "Selamat tidur". (kutipan langsung)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは「<ruby>来週<rt>らいしゅう</rt></ruby> <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>出張<rt>しゅっちょう</rt></ruby>します」と <ruby>言<rt>い</rt></ruby>いました。</div>
+      <div class="id">Sdr. Miller berkata "Minggu depan dinas ke Tokyo". (kutipan langsung)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんは <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>出張<rt>しゅっちょう</rt></ruby>すると <ruby>言<rt>い</rt></ruby>いました。</div>
+      <div class="id">Sdr. Miller mengatakan bahwa dinas ke Tokyo. (kutipan tidak langsung)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>父<rt>ちち</rt></ruby>に <ruby>留学<rt>りゅうがく</rt></ruby>したいと <ruby>言<rt>い</rt></ruby>いました。</div>
+      <div class="id">Saya berkata kepada ayah bahwa ingin belajar di luar negeri.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> でしょう</h4>
+    <div class="ex">
+      <div class="jp">あした パーティーに <ruby>行<rt>い</rt></ruby>くでしょ？……ええ、<ruby>行<rt>い</rt></ruby>きます。</div>
+      <div class="id">Besok pergi ke pesta, bukan? ……Ya, pergi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>北海道<rt>ほっかいどう</rt></ruby>は <ruby>寒<rt>さむ</rt></ruby>かったでしょう？……いいえ、そんなに <ruby>寒<rt>さむ</rt></ruby>くなかったです。</div>
+      <div class="id">Hokkaido dingin, bukan? ……Tidak, tidak begitu dingin.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> KB(tempat) で KB₂ が あります</h4>
+    <div class="ex">
+      <div class="jp"><ruby>東京<rt>とうきょう</rt></ruby>で <ruby>日本<rt>にほん</rt></ruby>と ブラジルの サッカーの <ruby>試合<rt>しあい</rt></ruby>が あります。</div>
+      <div class="id">Di Tokyo diadakan pertandingan sepak bola antara Jepang dan Brasil.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">6</span> KB で (adegan) · KB でも Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp"><ruby>会議<rt>かいぎ</rt></ruby>で <ruby>何<rt>なに</rt></ruby>か <ruby>意見<rt>いけん</rt></ruby>を <ruby>言<rt>い</rt></ruby>いましたか。</div>
+      <div class="id">Di dalam rapat, apakah mengutarakan suatu pendapat?</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ちょっと ビールでも <ruby>飲<rt>の</rt></ruby>みませんか。</div>
+      <div class="id">Bagaimana kalau minum bir, atau...?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">7</span> Kata Kerja (Bentuk ない) ないと……</h4>
+    <div class="ex">
+      <div class="jp">もう <ruby>帰<rt>かえ</rt></ruby>らないと……。</div>
+      <div class="id">Harus pulang...</div>
+    </div>
+    <div class="note">Singkatan dari <code>ないと いけません</code>, artinya hampir sama dengan <code>なければ なりません</code>.</div>
+  </article>
+</section>
+
+<!-- ============ BAB 22 ============ -->
+<section id="bab22">
+  <div class="sec-head">
+    <div class="sec-num">22</div>
+    <div>
+      <h3>Anak Kalimat</h3>
+      <div class="sub">Kata Benda yang diterangkan frasa</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Anak Kalimat</h4>
+    <p class="desc">Kata atau frasa yang menerangkan Kata Benda diletakkan di depan Kata Benda.</p>
+    <div class="ex">
+      <div class="jp"><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>く <ruby>人<rt>ひと</rt></ruby> / <ruby>行<rt>い</rt></ruby>かない <ruby>人<rt>ひと</rt></ruby> / <ruby>行<rt>い</rt></ruby>った <ruby>人<rt>ひと</rt></ruby> / <ruby>行<rt>い</rt></ruby>かなかった <ruby>人<rt>ひと</rt></ruby></div>
+      <div class="id">orang yang pergi ke Kyoto / tidak pergi / telah pergi / tidak pergi (lampau)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>背<rt>せ</rt></ruby>が <ruby>高<rt>たか</rt></ruby>くて、<ruby>髪<rt>かみ</rt></ruby>が <ruby>黒<rt>くろ</rt></ruby>い <ruby>人<rt>ひと</rt></ruby></div>
+      <div class="id">orang yang badannya tinggi dan rambutnya hitam</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Pemakaian Anak Kalimat</h4>
+    <div class="ex">
+      <div class="jp">これは ミラーさんが <ruby>住<rt>す</rt></ruby>んで いた うちです。</div>
+      <div class="id">Ini adalah rumah yang dihuni Sdr. Miller.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんが <ruby>住<rt>す</rt></ruby>んで いた うちは <ruby>古<rt>ふる</rt></ruby>いです。</div>
+      <div class="id">Rumah yang dihuni Sdr. Miller sudah tua.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は ミラーさんが <ruby>住<rt>す</rt></ruby>んで いた うちが <ruby>好<rt>す</rt></ruby>きです。</div>
+      <div class="id">Saya suka rumah yang dihuni Sdr. Miller.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">ミラーさんが <ruby>住<rt>す</rt></ruby>んで いた うちに <ruby>猫<rt>ねこ</rt></ruby>が いました。</div>
+      <div class="id">Di rumah yang dihuni Sdr. Miller ada kucing.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Subjek dalam Anak Kalimat</h4>
+    <div class="ex">
+      <div class="jp">これは ミラーさんが <ruby>作<rt>つく</rt></ruby>った ケーキです。</div>
+      <div class="id">Ini adalah kue yang dibuat oleh Sdr. Miller.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は カリナさんが かいた <ruby>絵<rt>え</rt></ruby>が <ruby>好<rt>す</rt></ruby>きです。</div>
+      <div class="id">Saya suka lukisan yang dilukis oleh Sdr. Karina.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">[あなたは] <ruby>彼<rt>かれ</rt></ruby>が <ruby>生<rt>う</rt></ruby>まれた <ruby>所<rt>ところ</rt></ruby>を <ruby>知<rt>し</rt></ruby>って いますか。</div>
+      <div class="id">Apakah [Anda] tahu tempat dia lahir?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> Kata Kerja Bentuk Kamus 時間／約束／用事</h4>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>朝<rt>あさ</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べる <ruby>時間<rt>じかん</rt></ruby>が ありません。</div>
+      <div class="id">Saya tidak ada waktu untuk makan pagi.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>友達<rt>ともだち</rt></ruby>と <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>る <ruby>約束<rt>やくそく</rt></ruby>が あります。</div>
+      <div class="id">Saya ada janji dengan teman untuk menonton film.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">きょうは <ruby>市役所<rt>しやくしょ</rt></ruby>へ <ruby>行<rt>い</rt></ruby>く <ruby>用事<rt>ようじ</rt></ruby>が あります。</div>
+      <div class="id">Hari ini ada urusan pergi ke kantor wali kota.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 23 ============ -->
+<section id="bab23">
+  <div class="sec-head">
+    <div class="sec-num">23</div>
+    <div>
+      <h3>Waktu & Syarat</h3>
+      <div class="sub">とき · と · を (melewati)</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> とき (ketika)</h4>
+    <div class="pattern">Kata Kerja (Bentuk Kamus / ない) / い形 / な形[な] / KB の + とき、～</div>
+    <div class="ex">
+      <div class="jp"><ruby>図書館<rt>としょかん</rt></ruby>で <ruby>本<rt>ほん</rt></ruby>を <ruby>借<rt>か</rt></ruby>りる とき、カードが <ruby>要<rt>い</rt></ruby>ります。</div>
+      <div class="id">Ketika meminjam buku di perpustakaan, diperlukan kartu.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>が わからない とき、わたしに <ruby>聞<rt>き</rt></ruby>いて ください。</div>
+      <div class="id">Jika tidak tahu cara pemakaiannya, silakan tanya kepada saya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>体<rt>からだ</rt></ruby>の <ruby>調子<rt>ちょうし</rt></ruby>が <ruby>悪<rt>わる</rt></ruby>い とき、「<ruby>元気茶<rt>げんきちゃ</rt></ruby>」を <ruby>飲<rt>の</rt></ruby>みます。</div>
+      <div class="id">Ketika badan tidak enak, minum "Genki-cha".</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>暇<rt>ひま</rt></ruby>な とき、うちへ <ruby>遊<rt>あそ</rt></ruby>びに <ruby>来<rt>き</rt></ruby>ませんか。</div>
+      <div class="id">Pada waktu luang, bagaimana kalau datang bermain ke rumah saya?</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>若<rt>わか</rt></ruby>い とき、あまり <ruby>勉強<rt>べんきょう</rt></ruby>しませんでした。</div>
+      <div class="id">Waktu muda, tidak begitu belajar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>子<rt>こ</rt></ruby>どもの とき、よく <ruby>川<rt>かわ</rt></ruby>で <ruby>泳<rt>およ</rt></ruby>ぎました。</div>
+      <div class="id">Waktu masih kecil, sering berenang di sungai.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Bentuk Kamus / Bentuk た + とき</h4>
+    <div class="ex">
+      <div class="jp">パリへ <ruby>行<rt>い</rt></ruby>く とき、かばんを <ruby>買<rt>か</rt></ruby>いました。</div>
+      <div class="id">Waktu mau pergi ke Paris, saya membeli tas. (dibeli sebelum tiba di Paris)</div>
+    </div>
+    <div class="ex">
+      <div class="jp">パリへ <ruby>行<rt>い</rt></ruby>った とき、かばんを <ruby>買<rt>か</rt></ruby>いました。</div>
+      <div class="id">Waktu pergi ke Paris, saya membeli tas. (dibeli setelah tiba di Paris)</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja Bentuk Kamus と、～</h4>
+    <div class="ex">
+      <div class="jp">この ボタンを <ruby>押<rt>お</rt></ruby>すと、お<ruby>釣<rt>つ</rt></ruby>りが <ruby>出<rt>で</rt></ruby>ます。</div>
+      <div class="id">Kalau tekan tombol ini, uang kembaliannya keluar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">これを <ruby>回<rt>まわ</rt></ruby>すと、<ruby>音<rt>おと</rt></ruby>が <ruby>大<rt>おお</rt></ruby>きく なります。</div>
+      <div class="id">Kalau memutar ini, suaranya akan membesar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>右<rt>みぎ</rt></ruby>へ <ruby>曲<rt>ま</rt></ruby>がると、<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>が あります。</div>
+      <div class="id">Kalau belok ke kanan, ada kantor pos.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> Setelah <code>と</code>, ekspresi keinginan, harapan, ajakan, atau permohonan <b>tidak dapat</b> dipakai.<br>×<ruby>時間<rt>じかん</rt></ruby>があると、コンサートに <ruby>行<rt>い</rt></ruby>きたいです。</div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> KB を Kata Kerja (gerakan berpindah)</h4>
+    <div class="ex">
+      <div class="jp"><ruby>公園<rt>こうえん</rt></ruby>を <ruby>散歩<rt>さんぽ</rt></ruby>します。</div>
+      <div class="id">Berjalan-jalan di taman.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>道<rt>みち</rt></ruby>を <ruby>渡<rt>わた</rt></ruby>ります。</div>
+      <div class="id">Menyeberangi jalan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>交差点<rt>こうさてん</rt></ruby>を <ruby>右<rt>みぎ</rt></ruby>へ <ruby>曲<rt>ま</rt></ruby>がります。</div>
+      <div class="id">Di perempatan belok ke kanan.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 24 ============ -->
+<section id="bab24">
+  <div class="sec-head">
+    <div class="sec-num">24</div>
+    <div>
+      <h3>Memberi & Menerima</h3>
+      <div class="sub">くれます · てあげます · てもらいます · てくれます</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> くれます</h4>
+    <p class="desc"><code>あげます</code> tidak dapat dipakai jika orang lain memberikan kepada pembicara/keluarga. Gunakan <code>くれます</code>.</p>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>佐藤<rt>さとう</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました。</div>
+      <div class="id">Saya memberikan Sdr. Sato bunga.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>佐藤<rt>さとう</rt></ruby>さんは <ruby>私<rt>わたし</rt></ruby>に クリスマスカードを くれました。</div>
+      <div class="id">Sdr. Sato memberikan saya kartu Natal.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>佐藤<rt>さとう</rt></ruby>さんは <ruby>妹<rt>いもうと</rt></ruby>に お<ruby>菓子<rt>かし</rt></ruby>を くれました。</div>
+      <div class="id">Sdr. Sato memberikan adik kue.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja Bentuk て あげます／もらいます／くれます</h4>
+    <p class="desc">Menunjukkan perbuatan yang saling memberi kebaikan/keuntungan.</p>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>本<rt>ほん</rt></ruby>を <ruby>貸<rt>か</rt></ruby>して あげました。</div>
+      <div class="id">Saya meminjamkan Sdr. Kimura buku.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">タクシーを <ruby>呼<rt>よ</rt></ruby>びましょうか。</div>
+      <div class="id">Bagaimana kalau saya panggilkan taksi? (lebih sopan untuk atasan)</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>図書館<rt>としょかん</rt></ruby>の <ruby>電話番号<rt>でんわばんごう</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えて もらいました。</div>
+      <div class="id">Saya diberikan nomor telepon perpustakaan oleh Sdr. Yamada.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>母<rt>はは</rt></ruby>は [わたしに] セーターを <ruby>送<rt>おく</rt></ruby>って くれました。</div>
+      <div class="id">Ibu saya mengirimkan saya sweater.</div>
+    </div>
+    <div class="warn"><b>Perhatian:</b> Jika penerima perbuatan adalah <code>わたし</code>, biasanya <code>わたし</code> dihilangkan. Jika memberi kebaikan kepada atasan, sebaiknya pakai <code>ましょうか</code> (bukan てあげます).</div>
+    <div class="note"><b>Catatan partikel:</b> Partikel <code>に</code> yang menunjuk penerima kebaikan tetap sama, baik sebelum maupun sesudah pakai てあげます/てくれます.<br>
+      Contoh: <ruby>私<rt>わたし</rt></ruby>に <ruby>旅行<rt>りょこう</rt></ruby>の <ruby>写真<rt>しゃしん</rt></ruby>を <ruby>見<rt>み</rt></ruby>せます。→ <ruby>私<rt>わたし</rt></ruby>に <ruby>旅行<rt>りょこう</rt></ruby>の <ruby>写真<rt>しゃしん</rt></ruby>を <ruby>見<rt>み</rt></ruby>せて くれます。
+    </div>
+    <div class="compare">
+      <h5>あげる vs くれる vs もらう</h5>
+      <p class="desc" style="margin:0">
+        <b>あげる</b> → saya/orang lain memberi ke orang lain (arah keluar dari saya).<br>
+        <b>くれる</b> → orang lain memberi ke saya/keluarga saya (arah masuk ke saya).<br>
+        <b>もらう</b> → saya/orang lain menerima dari orang lain. Subjek adalah penerima.
+      </p>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> KB₁ は KB₂ が Kata Kerja</h4>
+    <div class="ex">
+      <div class="jp">おいしい ワインですね。……ええ、[この ワインは] <ruby>佐藤<rt>さとう</rt></ruby>さんが くれました。</div>
+      <div class="id">Anggur yang enak ya. ……Ya, [anggur ini] Sdr. Sato yang berikan.</div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ BAB 25 ============ -->
+<section id="bab25">
+  <div class="sec-head">
+    <div class="sec-num">25</div>
+    <div>
+      <h3>Pengandaian</h3>
+      <div class="sub">たら · ても · もし</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4><span class="n">1</span> Bentuk Biasa Lampau ら、～</h4>
+    <div class="pattern">KB / Kata Sifat / Kata Kerja (Bentuk Biasa Lampau) + ら、～</div>
+    <div class="ex">
+      <div class="jp">お<ruby>金<rt>かね</rt></ruby>が あったら、<ruby>旅行<rt>りょこう</rt></ruby>します。</div>
+      <div class="id">Kalau punya uang, berwisata.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>時間<rt>じかん</rt></ruby>が なかったら、テレビを <ruby>見<rt>み</rt></ruby>ません。</div>
+      <div class="id">Kalau tidak ada waktu, tidak menonton TV.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>安<rt>やす</rt></ruby>かったら、パソコンを <ruby>買<rt>か</rt></ruby>いたいです。</div>
+      <div class="id">Kalau murah, ingin membeli komputer.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>暇<rt>ひま</rt></ruby>だったら、<ruby>手伝<rt>てつだ</rt></ruby>って ください。</div>
+      <div class="id">Kalau sedang luang, tolong bantu saya.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">いい <ruby>天気<rt>てんき</rt></ruby>だったら、<ruby>散歩<rt>さんぽ</rt></ruby>しませんか。</div>
+      <div class="id">Kalau cuaca baik, bagaimana kita jalan-jalan?</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">2</span> Kata Kerja Bentuk たら、～</h4>
+    <div class="ex">
+      <div class="jp">10<ruby>時<rt>じ</rt></ruby>に なったら、<ruby>出<rt>で</rt></ruby>かけましょう。</div>
+      <div class="id">Kalau sudah sampai pukul sepuluh, kita berangkat.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">うちへ <ruby>帰<rt>かえ</rt></ruby>ったら、すぐ シャワーを <ruby>浴<rt>あ</rt></ruby>びます。</div>
+      <div class="id">Kalau pulang ke rumah, saya langsung mandi.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">3</span> Kata Kerja / Kata Sifat / KB ても</h4>
+    <div class="pattern">Kata Kerja (Bentuk て) / い形→～くて / な形→～で / KB→～で + も</div>
+    <div class="ex">
+      <div class="jp"><ruby>雨<rt>あめ</rt></ruby>が <ruby>降<rt>ふ</rt></ruby>っても、<ruby>洗濯<rt>せんたく</rt></ruby>します。</div>
+      <div class="id">Walaupun hujan, mencuci pakaian.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>安<rt>やす</rt></ruby>くても、わたしは グループ<ruby>旅行<rt>りょこう</rt></ruby>が <ruby>嫌<rt>きら</rt></ruby>いです。</div>
+      <div class="id">Walaupun murah, saya tidak suka tur rombongan.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>便利<rt>べんり</rt></ruby>でも、パソコンを <ruby>使<rt>つか</rt></ruby>いません。</div>
+      <div class="id">Walaupun praktis, tidak memakai komputer.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>日曜日<rt>にちようび</rt></ruby>でも、<ruby>働<rt>はたら</rt></ruby>きます。</div>
+      <div class="id">Walaupun hari Minggu, bekerja.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">4</span> もし</h4>
+    <div class="ex">
+      <div class="jp">もし 1<ruby>億円<rt>おくえん</rt></ruby> あったら、いろいろな <ruby>国<rt>くに</rt></ruby>を <ruby>旅行<rt>りょこう</rt></ruby>したいです。</div>
+      <div class="id">Kalau punya seratus juta yen, ingin berwisata di berbagai negara.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4><span class="n">5</span> Subjek dalam Anak Kalimat</h4>
+    <div class="ex">
+      <div class="jp"><ruby>友達<rt>ともだち</rt></ruby>が <ruby>来<rt>く</rt></ruby>る まえに、<ruby>部屋<rt>へや</rt></ruby>を <ruby>掃除<rt>そうじ</rt></ruby>します。</div>
+      <div class="id">Sebelum teman datang, membersihkan kamar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>妻<rt>つま</rt></ruby>が <ruby>病気<rt>びょうき</rt></ruby>の とき、<ruby>会社<rt>かいしゃ</rt></ruby>を <ruby>休<rt>やす</rt></ruby>みます。</div>
+      <div class="id">Waktu istri sakit, saya tidak masuk kerja.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>友達<rt>ともだち</rt></ruby>が <ruby>約束<rt>やくそく</rt></ruby>の <ruby>時間<rt>じかん</rt></ruby>に <ruby>来<rt>こ</rt></ruby>なかったら、どう しますか。</div>
+      <div class="id">Kalau teman tidak datang pada waktu janji, bagaimana?</div>
+    </div>
+    <div class="note">Subjek dalam anak kalimat (<code>てから</code>, <code>とき</code>, <code>まえに</code>, <code>たら</code>, <code>ても</code>) ditunjukkan dengan <code>が</code>.</div>
+  </article>
+</section>
+
+<!-- ============ RINGKASAN ============ -->
+<section id="ringkas-partikel">
+  <div class="sec-head">
+    <div class="sec-num">§</div>
+    <div>
+      <h3>Ringkasan Perbandingan Partikel</h3>
+      <div class="sub">は vs が · に vs で</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4>は vs が</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>は</th><th>が</th></tr>
+        <tr><td>Menandai <b>topik</b> kalimat</td><td>Menandai <b>subjek</b> kalimat</td></tr>
+        <tr><td>Informasi yang sudah dikenal</td><td>Informasi baru</td></tr>
+        <tr><td>Penekanan pada predikat</td><td>Penekanan pada subjek</td></tr>
+        <tr><td>Objek dari 好き・わかる・ある・いる → pakai <b>が</b></td><td>Subjek anak kalimat → pakai <b>が</b></td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>学生<rt>がくせい</rt></ruby>です。(topik: 私)</div>
+      <div class="id">Saya mahasiswa.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">だれが <ruby>来<rt>き</rt></ruby>ましたか。……ミラーさんが <ruby>来<rt>き</rt></ruby>ました。(subjek baru)</div>
+      <div class="id">Siapa yang datang? ……Sdr. Miller yang datang.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4>に vs で</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>に</th><th>で</th></tr>
+        <tr><td>Titik waktu spesifik</td><td>Tempat aksi berlangsung</td></tr>
+        <tr><td>Tujuan keberadaan (あります／います)</td><td>Sarana / alat</td></tr>
+        <tr><td>Tujuan perpindahan</td><td>Bahan / bahasa</td></tr>
+        <tr><td>Penerima (あげます／もらいます)</td><td>Titik awal (keluar rumah)</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>６時<rt>ろくじ</rt></ruby>に <ruby>起<rt>お</rt></ruby>きます。(titik waktu)</div>
+      <div class="id">Bangun pukul enam.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>駅<rt>えき</rt></ruby>で <ruby>新聞<rt>しんぶん</rt></ruby>を <ruby>買<rt>か</rt></ruby>います。(tempat aksi)</div>
+      <div class="id">Membeli koran di stasiun.</div>
+    </div>
+  </article>
+</section>
+
+<section id="ringkas-kk">
+  <div class="sec-head">
+    <div class="sec-num">§</div>
+    <div>
+      <h3>Ringkasan Perbandingan Kata Kerja</h3>
+      <div class="sub">あげる/くれる/もらう · ましょう/ませんか</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4>あげる vs くれる vs もらう</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata Kerja</th><th>Subjek</th><th>Arah</th></tr>
+        <tr><td class="jp">あげる</td><td>Pemberi</td><td>Dari saya/orang ketiga → orang lain</td></tr>
+        <tr><td class="jp">くれる</td><td>Pemberi</td><td>Dari orang lain → saya/keluarga saya</td></tr>
+        <tr><td class="jp">もらう</td><td>Penerima</td><td>Dari orang lain → saya/orang ketiga</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>佐藤<rt>さとう</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました。</div>
+      <div class="id">Saya memberikan Sdr. Sato bunga.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>佐藤<rt>さとう</rt></ruby>さんは <ruby>私<rt>わたし</rt></ruby>に <ruby>花<rt>はな</rt></ruby>を くれました。</div>
+      <div class="id">Sdr. Sato memberikan saya bunga.</div>
+    </div>
+    <div class="ex">
+      <div class="jp"><ruby>私<rt>わたし</rt></ruby>は <ruby>佐藤<rt>さとう</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいました。</div>
+      <div class="id">Saya menerima bunga dari Sdr. Sato.</div>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4>ましょう vs ませんか</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>ましょう</th><th>ませんか</th></tr>
+        <tr><td>Menyatakan ajakan aktif</td><td>Menawarkan / mengajak lebih halus</td></tr>
+        <tr><td>Si pembicara sudah punya keinginan</td><td>Menghormati keinginan lawan bicara</td></tr>
+      </table>
+    </div>
+    <div class="ex">
+      <div class="jp">ちょっと <ruby>休<rt>やす</rt></ruby>みましょう。</div>
+      <div class="id">Mari istirahat sebentar.</div>
+    </div>
+    <div class="ex">
+      <div class="jp">いっしょに <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べませんか。</div>
+      <div class="id">Bagaimana makan siang bersama?</div>
+    </div>
+  </article>
+</section>
+
+<section id="ringkas-bentuk">
+  <div class="sec-head">
+    <div class="sec-num">§</div>
+    <div>
+      <h3>Tabel Perubahan Bentuk Kata Kerja</h3>
+      <div class="sub">ます · て · ない · た · 普通形</div>
+    </div>
+  </div>
+
+  <article class="point">
+    <h4>Ringkasan Semua Bentuk</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr>
+          <th>Kelompok</th><th>ます</th><th>て</th><th>ない</th><th>た</th><th>Kamus</th>
+        </tr>
+        <tr>
+          <td>I (かきます)</td>
+          <td class="jp">かきます</td>
+          <td class="jp">かいて</td>
+          <td class="jp">かかない</td>
+          <td class="jp">かいた</td>
+          <td class="jp">かく</td>
+        </tr>
+        <tr>
+          <td>I (のみます)</td>
+          <td class="jp">のみます</td>
+          <td class="jp">のんで</td>
+          <td class="jp">のまない</td>
+          <td class="jp">のんだ</td>
+          <td class="jp">のむ</td>
+        </tr>
+        <tr>
+          <td>I (かいます)</td>
+          <td class="jp">かいます</td>
+          <td class="jp">かって</td>
+          <td class="jp">かわない</td>
+          <td class="jp">かった</td>
+          <td class="jp">かう</td>
+        </tr>
+        <tr>
+          <td>I (いきます)</td>
+          <td class="jp">いきます</td>
+          <td class="jp">いって</td>
+          <td class="jp">いかない</td>
+          <td class="jp">いった</td>
+          <td class="jp">いく</td>
+        </tr>
+        <tr>
+          <td>II (たべます)</td>
+          <td class="jp">たべます</td>
+          <td class="jp">たべて</td>
+          <td class="jp">たべない</td>
+          <td class="jp">たべた</td>
+          <td class="jp">たべる</td>
+        </tr>
+        <tr>
+          <td>II (みます)</td>
+          <td class="jp">みます</td>
+          <td class="jp">みて</td>
+          <td class="jp">みない</td>
+          <td class="jp">みた</td>
+          <td class="jp">みる</td>
+        </tr>
+        <tr>
+          <td>III (します)</td>
+          <td class="jp">します</td>
+          <td class="jp">して</td>
+          <td class="jp">しない</td>
+          <td class="jp">した</td>
+          <td class="jp">する</td>
+        </tr>
+        <tr>
+          <td>III (きます)</td>
+          <td class="jp">きます</td>
+          <td class="jp">きて</td>
+          <td class="jp">こない</td>
+          <td class="jp">きた</td>
+          <td class="jp">くる</td>
+        </tr>
+      </table>
+    </div>
+  </article>
+
+  <article class="point">
+    <h4>Bentuk Biasa vs Bentuk Sopan</h4>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Kata Kerja</th><th>Sopan</th><th>Biasa (Positif)</th><th>Biasa (Negatif)</th></tr>
+        <tr><td>Non-lampau</td><td class="jp"><ruby>行<rt>い</rt></ruby>きます</td><td class="jp"><ruby>行<rt>い</rt></ruby>く</td><td class="jp"><ruby>行<rt>い</rt></ruby>かない</td></tr>
+        <tr><td>Lampau</td><td class="jp"><ruby>行<rt>い</rt></ruby>きました</td><td class="jp"><ruby>行<rt>い</rt></ruby>った</td><td class="jp"><ruby>行<rt>い</rt></ruby>かなかった</td></tr>
+      </table>
+    </div>
+  </article>
+</section>
+
+<footer>
+  📚 Ringkasan Tata Bahasa <b>Minna no Nihongo I</b> · Bab 1–25 · Level JLPT N5<br>
+  Dibuat untuk belajar mandiri — 頑張ってください！
+  <div class="src">
+    Disusun berdasarkan buku <b>Minna no Nihongo I — Keterangan Tata Bahasa</b> (Terjemahan Bahasa Indonesia), 3A Corporation.
+  </div>
+</footer>
+
+</main>
+</div>
+
+<button id="top" aria-label="Kembali ke atas">↑</button>
+
+<script>
+/* Furigana toggle */
+const furiganaBtn = document.getElementById('furiganaBtn');
+const savedFurigana = localStorage.getItem('furigana');
+if(savedFurigana === 'off'){
+  document.body.classList.add('no-furigana');
+  furiganaBtn.classList.remove('on');
+}
+furiganaBtn.addEventListener('click', ()=>{
+  document.body.classList.toggle('no-furigana');
+  furiganaBtn.classList.toggle('on');
+  localStorage.setItem('furigana', document.body.classList.contains('no-furigana') ? 'off' : 'on');
+});
+
+/* Theme toggle */
+const themeBtn = document.getElementById('themeBtn');
+const savedTheme = localStorage.getItem('theme');
+if(savedTheme === 'dark'){
+  document.body.classList.add('dark');
+  themeBtn.classList.add('on');
+}
+themeBtn.addEventListener('click', ()=>{
+  document.body.classList.toggle('dark');
+  themeBtn.classList.toggle('on');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});
+
+/* Sidebar mobile */
+const sidebar = document.getElementById('sidebar');
+const menuBtn = document.getElementById('menuBtn');
+menuBtn.addEventListener('click', ()=>{
+  const open = sidebar.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('.nav a').forEach(a=>{
+  a.addEventListener('click', ()=>{
+    if(window.innerWidth <= 960){
+      sidebar.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+document.addEventListener('keydown', e=>{
+  if(e.key === 'Escape'){
+    sidebar.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+/* Back to top */
+const topBtn = document.getElementById('top');
+window.addEventListener('scroll', ()=> topBtn.classList.toggle('show', window.scrollY > 400));
+topBtn.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+
+/* Active nav on scroll */
+const sections = [...document.querySelectorAll('section')];
+const navLinks = [...document.querySelectorAll('.nav a')];
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === '#'+e.target.id));
+    }
+  });
+},{rootMargin:'-30% 0px -60% 0px', threshold:0});
+sections.forEach(s=>observer.observe(s));
+
+/* Search */
+const search = document.getElementById('search');
+const empty = document.getElementById('empty');
+search.addEventListener('input', ()=>{
+  const q = search.value.toLowerCase().trim();
+  let anyVisible = false;
+  sections.forEach(sec=>{
+    const txt = sec.textContent.toLowerCase();
+    const match = txt.includes(q);
+    sec.style.display = (q === '' || match) ? '' : 'none';
+    if(q === '' || match) anyVisible = true;
+    const link = document.querySelector('.nav a[href="#'+sec.id+'"]');
+    if(link) link.style.display = (q === '' || match) ? '' : 'none';
+  });
+  empty.classList.toggle('show', q !== '' && !anyVisible);
+});
+document.addEventListener('keydown', e=>{
+  if(e.key === '/' && document.activeElement !== search){
+    e.preventDefault(); search.focus();
+  }
+  if(e.key === 'Escape' && document.activeElement === search){
+    search.value=''; search.dispatchEvent(new Event('input')); search.blur();
+  }
+});
+</script>
+</body>
+</html>
